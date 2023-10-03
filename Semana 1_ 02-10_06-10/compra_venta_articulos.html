@@ -14,7 +14,7 @@
 
       while (bandera) {
         const opcion = prompt(
-          "****BIENVENIDO**** \n 1.Comprar articulo \n 2.Vender artículo \n 3.Eliminar articulo del carrito \n 4.Mostrar articulos vendidos \n 5.Salir"
+          "****BIENVENIDO**** \n 1.Comprar articulo \n 2.Eliminar articulo del carrito \n 3.Mostrar articulos vendidos \n 4.Salir"
         );
 
         //let opcion = prompt(mensajeMenu);
@@ -31,16 +31,27 @@
             } while (seguir === "si");
             comprarArticulo(arrayArticulos);
             break;
-            
-          case 4:
+          case 2:
+            let bandera2 = "";
+            do {
+              const indice = prompt(
+                "Introduce el indice del articulo que desea borrar"
+              );
+              eliminarArticulo(indice);
+              bandera2 = prompt("Quieres seguir?", "si/no");
+            } while (bandera2 === "si");
+            break;
+
+          case 3:
             let lista = mostrarArticulos();
             alert(lista);
             break;
 
-          case 5:
+          case 4:
             bandera = false;
             break;
           default:
+            alert("Opción incorrecta");
             break;
         }
       }
@@ -57,6 +68,11 @@
         });
 
         return cadena;
+      }
+
+      function eliminarArticulo(indice) {
+        listaArticulos.splice(indice, 1);
+        alert("Eliminado con éxito");
       }
     </script>
   </body>
