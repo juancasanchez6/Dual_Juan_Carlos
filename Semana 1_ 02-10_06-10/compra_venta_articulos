@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer menu</title>
+  </head>
+  <body>
+    <h1>Este va a ser mi primer menu</h1>
+
+    <script>
+      let listaArticulos = [];
+      let bandera = true;
+
+      while (bandera) {
+        const opcion = prompt(
+          "****BIENVENIDO**** \n 1.Comprar articulo \n 2.Vender artículo \n 3.Eliminar articulo del carrito \n 4.Mostrar articulos vendidos \n 5.Salir"
+        );
+
+        //let opcion = prompt(mensajeMenu);
+        let opcionNumber = parseInt(opcion);
+        switch (opcionNumber) {
+          case 1:
+            let arrayArticulos = [];
+            let seguir = "";
+            do {
+              const nuevoElemento = prompt("Introduce le nuevo articulo");
+              arrayArticulos.push(nuevoElemento);
+
+              seguir = prompt("Quieres seguir?", "si/no");
+            } while (seguir === "si");
+            comprarArticulo(arrayArticulos);
+            break;
+            
+          case 4:
+            let lista = mostrarArticulos();
+            alert(lista);
+            break;
+
+          case 5:
+            bandera = false;
+            break;
+          default:
+            break;
+        }
+      }
+
+      function comprarArticulo(arrayArticulos) {
+        listaArticulos.push(...arrayArticulos);
+        alert("Añadido con éxito");
+      }
+
+      function mostrarArticulos() {
+        let cadena = "";
+        listaArticulos.forEach((element, index) => {
+          cadena += index + " - " + element + "\n";
+        });
+
+        return cadena;
+      }
+    </script>
+  </body>
+</html>
