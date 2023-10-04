@@ -593,16 +593,52 @@
       //   }
       // }
 
-      // const atril = new Articulo("atril", "gris"),
+      // class Fragil extends Articulo {
+      //   constructor(nombre, color, material) {
+      //     super(nombre, color);
+      //     this.material = material;
+      //     this.peso = null;
+      //   }
+
+      //   romper() {
+      //     console.log(`El ${this.nombre} de ${this.material} se ha roto`);
+      //   }
+
+      //   cuidar() {
+      //     console.log(
+      //       `Soy de ${this.material}, tened cuidado al transportarme`
+      //     );
+      //   }
+
+      //   static queEres() {
+      //     console.log(
+      //       "Somos articulos frágiles con los que hay que tener\ncierto cuidado al transportarnos."
+      //     );
+      //   }
+
+      //   get getPeso() {
+      //     return this.peso;
+      //   }
+
+      //   set setPeso(peso) {
+      //     this.peso = peso;
+      //   }
+      // }
+
+      // //Fragil.queEres();
+
+      // const atril = new Fragil("atril", "gris", "cristal"),
       //   teclado = new Articulo("teclado", "blanco");
 
-      // console.log(atril);
-      // console.log(teclado);
-      // atril.romper();
-      // teclado.presentar();
+      //  console.log(atril);
+      //  console.log(teclado);
+      // // atril.romper();
+      // // teclado.presentar();
+      // // atril.cuidar();
 
- 
-
+      // console.log(atril.getPeso);
+      // atril.setPeso = "10g";
+      // console.log(atril.getPeso);
     </script>
   </body>
 </html>
