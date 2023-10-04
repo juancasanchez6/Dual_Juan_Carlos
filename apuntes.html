@@ -641,7 +641,7 @@
       atril.setPeso = "10g";
       console.log(atril.getPeso);ss
       
-
+      //********VIDEO 18*********
       console.log(Date());
 
       let fecha = new Date();
@@ -654,6 +654,70 @@
       console.log(fecha.getFullYear());
 
       console.log(fecha.getHours()+ ":"+fecha.getMinutes()+":"+fecha.getSeconds());
+      */
+
+      // console.log(Math);
+
+      //********VIDEO 19*********
+      /*
+      CORTOCIRCUITO OR: cuando el valor de la izquierda
+      en la expresion siempre se puede validar a true,
+      es el valor que se cargara por defecto.
+
+
+      CORTOCIRCUITO AND: cuando el valor de la izquierda
+      en la expresion siempre se puede validar a false,
+      es el valor que se cargara por defecto.
+      */
+
+      //********VIDEO 20*********
+      //CORTOCIRCUITOS OR - AND
+      /*
+      function saludar(nombre) {
+        nombre = nombre || "Desconocido";
+        console.log(`Hola ${nombre}`);
+      }
+
+      console.log();
+      saludar("Juanca");
+      saludar();
+      */
+
+      //********VIDEO 21*********
+      //EXPRESIONES REGULARES
+      /*
+      let cadena =
+        "Las expresiones regulares están disponibles en muchos lenguajes de programación,\n como JavaScript, Python, PHP, Java y otros. Los desarrolladores web las utilizan en scripts del lado del cliente\n (en JavaScript) y del lado del servidor para manejar datos ingresados por el usuario,\n validar formularios, manipular datos, analizar logfiles y realizar muchas\n otras tareas relacionadas con el procesamiento de texto en el contexto del desarrollo web.";
+
+      //let expReg = new RegExp("lado", "");
+      let expReg2 = /lado{1,4}/ig;
+
+      console.log(cadena);
+      console.log(expReg2.test(cadena));
+      console.log(expReg2.exec(cadena));
+      */
+      /*
+      ******BANDERAS******
+      g: no se detiene en la primera coincidencia y analiza todo el texto
+      i: no distingue entre mayúsculas y minúsculas
+      m: coincidencia en multiples líneas
+      s: punto que coincide con cualquier carácter especial, incluyendo saltos de linea
+      u: habilita el soporte completo de Unicode
+      */
+
+      //********VIDEO 22*********
+      //FUNCIONES ANONIMAS EJECUTABLES
+      /*
+      (function (){
+        console.log("Mi primer IIFE")
+      })();
+
+      (function (d,w,c){
+        console.log("Mi segunda IIFE")
+        console.log(d)
+        console.log(w)
+        c.log("Esto es un console.log")
+      })(document, window, console);
       */
     </script>
   </body>
