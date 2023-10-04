@@ -1,5 +1,5 @@
 # Semana 1
-###Cosas vistas
+### Cosas vistas
 <ul>
   <li>variables</li>
   <li>operadores</li>
