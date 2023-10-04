@@ -25,5 +25,5 @@
 </ul>
 
 ## Resumen de actividades
-  <p>Estamos empezando con entorno cliente, con JavaScript, nos han dado un curso de vídeos con ejemplos y ejercicios de lógica de programación para ir haciendo poco a poco. Por nuestra cuenta Javi y yo hemos hecho un menú iteractivo, cada uno el suyo pero ayudándonos entre los dos, mi menú es el archivo que se llama "venta_compra_Articulos.html".</p>
+  <p>Estamos empezando con entorno cliente, con JavaScript, nos han dado un curso de vídeos con ejemplos y ejercicios de lógica de programación para ir haciendo poco a poco. Por nuestra cuenta Javi y yo hemos hecho un menú iteractivo, cada uno el suyo pero ayudándonos entre los dos, mi menú es el archivo que se llama "compra_venta_articulos.html".</p>
   <p>Fuera de las carpetas que iré haciendo de cada semana, tengo un archivo que se llama "apuntes.html" que es donde estoy subiendo todos los apuntes y ejemplos que voy tomando de los vídeos del curso.</p>
