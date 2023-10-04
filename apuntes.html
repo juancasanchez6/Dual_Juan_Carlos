@@ -9,230 +9,231 @@
     <h1>Fundamentos js</h1>
     <script>
       //************VIDEO 1*******************
-      // var hola = "HOla Mundo";
-      // let hello = "Hello world";
-      // console.log(hola);
-      // console.log(hello);
-      // console.log(window);
-      // console.log(window.hola);
-      // console.log(window.hello);
+      /*
+       var hola = "HOla Mundo";
+       let hello = "Hello world";
+       console.log(hola);
+       console.log(hello);
+       console.log(window);
+       console.log(window.hola);
+       console.log(window.hello);
       //ambito de bloque
-      // console.log("*****let*****");
-      // let musica = "Rock";
-      // console.log("Variable musica antes del bloque:", musica);
-      // // esto es un bloque
+       console.log("*****let*****");
+       let musica = "Rock";
+       console.log("Variable musica antes del bloque:", musica);
+       // esto es un bloque
 
-      // {
-      //     let musica = "Pop";
-      // console.log("Variable musica dentro del bloque:", musica);
+       {
+           let musica = "Pop";
+       console.log("Variable musica dentro del bloque:", musica);
 
-      // }
-      // console.log("Variable musica despues del bloque:", musica);
+       }
+       console.log("Variable musica despues del bloque:", musica);
 
-      // console.log("*****var*****");
-      // var musica2 = "Rock";
-      // console.log("Variable musica antes del bloque:", musica2);
-      // // esto es un bloque
+       console.log("*****var*****");
+       var musica2 = "Rock";
+       console.log("Variable musica antes del bloque:", musica2);
+        //esto es un bloque
 
-      // {
-      // var musica2 = "Pop";
-      // console.log("Variable musica dentro del bloque:", musica2);
+       {
+       var musica2 = "Pop";
+       console.log("Variable musica dentro del bloque:", musica2);
 
-      // }
-      // console.log("Variable musica despues del bloque:", musica2);
-
+       }
+       console.log("Variable musica despues del bloque:", musica2);
+*/
       //************VIDEO 2*******************
+      /*
+       const PI = 3.1416;
+        const NUEVE = 9;
+       let a;
+       console.log(PI);
 
-      // const PI = 3.1416;
-      // // const NUEVE = 9;
-      // let a;
-      // console.log(PI);
+       a = "kenai";
+       console.log(a);
 
-      // a = "kenai";
-      // console.log(a);
+       const objeto = {
+           nombre: "Jon",
+           edad: 35
+       }
 
-      // const objeto = {
-      //     nombre: "Jon",
-      //     edad: 35
-      // }
+       const colores = ["blanco","negro","azul"];
+       console.log(objeto);
+       console.log(colores);
 
-      // const colores = ["blanco","negro","azul"];
-      // console.log(objeto);
-      // console.log(colores);
+       objeto.correo = "juanca16@gmail.com";
+       colores.push("anaranjado");
 
-      // objeto.correo = "juanca16@gmail.com";
-      // colores.push("anaranjado");
-
-      // console.log(objeto);
-      // console.log(colores);
-
+       console.log(objeto);
+       console.log(colores);
+*/
       //************VIDEO 3*******************
-
+      /*
       //Cadenas de texto aka String
-      // let nombre = "Juan Carlos";
-      // let apellido = "Sanchez";
-      // let saludo = new String("Hola mundo");
-      // let texto = "            Hola buenos dias, mi nombre es Evaristo , vengo de muchamiel para aprender todo esto de programar y asi, en un futuro, poder trabajar";
+       let nombre = "Juan Carlos";
+       let apellido = "Sanchez";
+       let saludo = new String("Hola mundo");
+       let texto = "            Hola buenos dias, mi nombre es Evaristo , vengo de muchamiel para aprender todo esto de programar y asi, en un futuro, poder trabajar";
 
-      // console.log(nombre, apellido, saludo);
-      // console.log(
-      //     nombre.length,
-      //     apellido.length,
-      //     saludo.length,
-      //     nombre.toUpperCase(),
-      //     apellido.toLowerCase(),
-      //     texto.includes("muchamiel"),
-      //     texto.includes("novis"),
-      //     texto,
-      //     texto.trim(),
-      //     texto.split(",")
-      //     );
-
+       console.log(nombre, apellido, saludo);
+       console.log(
+           nombre.length,
+           apellido.length,
+           saludo.length,
+           nombre.toUpperCase(),
+           apellido.toLowerCase(),
+           texto.includes("muchamiel"),
+           texto.includes("novis"),
+           texto,
+           texto.trim(),
+           texto.split(",")
+           );
+*/
       //*******VIDEO 4*********
+      /*
+       let nombre = "Juan Carlos";
+       let apellido = "Sanchez";
 
-      // let nombre = "Juan Carlos";
-      // let apellido = "Sanchez";
+       let saludo = `Hola mi nombre es ${nombre} ${apellido}.` ;
+       console.log(saludo);
 
-      // let saludo = `Hola mi nombre es ${nombre} ${apellido}.` ;
-      // console.log(saludo);
-
-      // let ul = `
-      // <ul>
-      //     <li>Primavera</li>
-      //     <li>Verano</li>
-      //     <li>Otoño</li>
-      //     <li>Invierno</li>
-      // </ul>`;
-      // console.log(ul);
-
+       let ul = `
+       <ul>
+           <li>Primavera</li>
+           <li>Verano</li>
+           <li>Otoño</li>
+           <li>Invierno</li>
+       </ul>`;
+       console.log(ul);
+*/
       //*******VIDEO 5*********
+      /*
+       let a = 2;
+       let b = new Number(1);
+       let c = 7.19;
+       let d = "5.6";
 
-      // let a = 2;
-      // let b = new Number(1);
-      // let c = 7.19;
-      // let d = "5.6";
-
-      // console.log(a,b);
-      // console.log(c.toFixed(1));
-      // console.log(c.toFixed(5));
-      // console.log(parseInt(c));
-      // console.log(parseFloat(c));
-      // console.log(typeof c, typeof d);
-      // console.log(a +b);
-      // console.log(c + parseFloat(d));
-      // console.log(c + Number.parseInt(d));
-      // console.log(c + Number.parseFloat(d));
-
+       console.log(a,b);
+       console.log(c.toFixed(1));
+       console.log(c.toFixed(5));
+       console.log(parseInt(c));
+       console.log(parseFloat(c));
+       console.log(typeof c, typeof d);
+       console.log(a +b);
+       console.log(c + parseFloat(d));
+       console.log(c + Number.parseInt(d));
+       console.log(c + Number.parseFloat(d));
+*/
       //*******VIDEO 6*********
-
+      /*
       //Funcion Declarada
 
-      // function estoEsUnaFuncion() {
-      //     console.log("Uno");
-      //     console.log("Dos");
-      //     console.log("Tres");
-      // }
+       function estoEsUnaFuncion() {
+           console.log("Uno");
+           console.log("Dos");
+           console.log("Tres");
+       }
 
-      // //Invocación de funcion
-      // // estoEsUnaFuncion();
-      // // estoEsUnaFuncion();
-      // // estoEsUnaFuncion();
-      // // estoEsUnaFuncion();
+      // Invocación de funcion
+        estoEsUnaFuncion();
+        estoEsUnaFuncion();
+        estoEsUnaFuncion();
+        estoEsUnaFuncion();
 
-      // function unaFuncionQueDevuelveValor() {
-      //     console.log("Uno");
-      //     console.log("Dos");
-      //     console.log("Tres");
-      //     return "LA funcion ha retornado una cadena de texto";
-      // }
+       function unaFuncionQueDevuelveValor() {
+           console.log("Uno");
+           console.log("Dos");
+           console.log("Tres");
+           return "LA funcion ha retornado una cadena de texto";
+       }
 
-      // let valorDeFuncion = unaFuncionQueDevuelveValor();
-      // console.log(valorDeFuncion);
+       let valorDeFuncion = unaFuncionQueDevuelveValor();
+       console.log(valorDeFuncion);
 
-      // function saludar(nombre, edad){
-      //     console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`)
-      // }
+       function saludar(nombre, edad){
+           console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`)
+       }
 
-      // saludar("Juan Carlos", 23);
+       saludar("Juan Carlos", 23);
 
-      // //FUNCIONES DECLARADAS vs FUNCIONES EXPRESADAS
-      // function funcionDeclarada() {
-      //     console.log(`Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, inluso antes de declarar la funcion`);
-      // }
+       //FUNCIONES DECLARADAS vs FUNCIONES EXPRESADAS
+       function funcionDeclarada() {
+           console.log(`Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, inluso antes de declarar la funcion`);
+       }
 
-      // funcionDeclarada()
+       funcionDeclarada()
 
-      // const funcionExpresada = function () {
-      //     console.log("Esto es una funcion expresada, y si la invoco antes de declararla js me dira 'Cannot access 'funcionExpresada' before initialization'")
-      // }
+       const funcionExpresada = function () {
+           console.log("Esto es una funcion expresada, y si la invoco antes de declararla js me dira 'Cannot access 'funcionExpresada' before initialization'")
+       }
 
-      // funcionExpresada()
-
+       funcionExpresada()
+*/
       //*******VIDEO 7*********
+      /*
+         const a = [];
+         const b = [1, true, "hola", ["A", "B", "C"]];
+         const c = Array.of("X", "Y", "Z", 9, 8, 7);
+         const d = Array(100).fill("novis");
 
-      //   const a = [];
-      //   const b = [1, true, "hola", ["A", "B", "C"]];
-      //   const c = Array.of("X", "Y", "Z", 9, 8, 7);
-      //   //const d = Array(100).fill("novis");
+         console.log(a);
 
-      //   console.log(a);
+         console.log(b);
+         console.log(b.length);
+         console.log(b[2]);
+         console.log(b[3][2]);
+         console.log(c);
+         console.log(d);
 
-      //   console.log(b);
-      //   console.log(b.length);
-      //   console.log(b[2]);
-      //   console.log(b[3][2]);
-      //   console.log(c);
-      //   //console.log(d);
+         const colores = ["blanco", "rojo", "verde"];
+         console.log(colores);
 
-      //   const colores = ["blanco", "rojo", "verde"];
-      //   console.log(colores);
-
-      //   colores.forEach(function (el, index){
-      //     console.log(`<li id = "${index}">${el}</li>`);
-      //  })
-
+         colores.forEach(function (el, index){
+           console.log(`<li id = "${index}">${el}</li>`);
+        })
+*/
       //********VIDEO 8**********
-
+      /*
       //OPERADORES ARIRMETICOS
 
-      // let a = 5 + (5 - 10) * 3;
-      // let modulo = 5 % 2;
-      // console.log(a);
-      // console.log(modulo);
+       let a = 5 + (5 - 10) * 3;
+       let modulo = 5 % 2;
+       console.log(a);
+       console.log(modulo);
 
       //OPERADORES RELACIONALES
-      // >, <, >=, <=, ==, ===, !=, !==
+       >, <, >=, <=, ==, ===, !=, !==
 
-      // console.log(8 > 9); //false
-      // console.log(8 < 9); //true
-      // console.log(8 <= 9); //true
-      // console.log(8 >= 9); //true
-      // console.log(7 > 7); //false
-      // console.log(7 >= 7); //true
+       console.log(8 > 9); false
+       console.log(8 < 9); true
+       console.log(8 <= 9); true
+       console.log(8 >= 9); true
+       console.log(7 > 7); false
+       console.log(7 >= 7); true
 
       /*
         = es asignación de variable
         == es comparación de valores
         === es para comparación de tipo de dato y de valor
-        */
+        
 
-      // console.log(7 == 7);//true
-      // console.log("7" == 7);//true
-      // console.log(0 == false);//true, ya que 0 tiende a false
+       console.log(7 == 7);true
+       console.log("7" == 7);true
+       console.log(0 == false);true, ya que 0 tiende a false
 
-      // console.log(7 === 7);
-      // console.log("7" === 7);
-      // console.log(0 === false);
+       console.log(7 === 7);
+       console.log("7" === 7);
+       console.log(0 === false);
 
       //INCREMENTO Y DECREMENTO
 
-      // let i = 1;
-      // i++;
-      // console.log(i);
-      // i += 2;
-      // console.log(i);
-      // i--;
-      // console.log(i);
+       let i = 1;
+       i++;
+       console.log(i);
+       i += 2;
+       console.log(i);
+       i--;
+       console.log(i);
 
       /*LÓGICOS
         ! Not
@@ -241,39 +242,39 @@
       */
 
       //*******VIDEO 9*********
-
+      /*
       //IF-ELSE
 
-      // let edad = 17;
+       let edad = 17;
 
-      // if (edad < 18) {
-      //   console.log("Eres menor de edad");
-      // } else if (edad > 18) {
-      //   console.log("Tienes más de 18 años");
-      // } else {
-      //   console.log("Acabas de cumplir 18 años.");
-      // }
+       if (edad < 18) {
+         console.log("Eres menor de edad");
+       } else if (edad > 18) {
+         console.log("Tienes más de 18 años");
+       } else {
+         console.log("Acabas de cumplir 18 años.");
+       }
 
       //IF-ELSE ANIDADO
-      // edad++;
-      // if (edad < 18) {
-      //   console.log("Eres menor de edad");
-      // } else if (edad > 18) {
-      //   console.log("Tienes más de 18 años");
-      // } else {
-      //   console.log("Acabas de cumplir 18 años.");
-      // }
+       edad++;
+       if (edad < 18) {
+         console.log("Eres menor de edad");
+       } else if (edad > 18) {
+         console.log("Tienes más de 18 años");
+       } else {
+         console.log("Acabas de cumplir 18 años.");
+       }
 
       //OPERADOR TERNARIO
       //operador ternario (condicion) ? verdadera : falsa
 
-      // console.log("Operador ternario");
-      // let eresMayor = edad >= 18
-      // ? "Eres mayor de edad"
-      // : "Eres menor de edad";
-      // console.log(eresMayor);
+       console.log("Operador ternario");
+       let eresMayor = edad >= 18
+       ? "Eres mayor de edad"
+       : "Eres menor de edad";
+       console.log(eresMayor);
 
-      //SWITCH-CASE
+      SWITCH-CASE
       /*
       domingo 0
       lunes 1
@@ -282,203 +283,203 @@
       jueves 4
       viernes 5
       sabado 6
-      */
+      
 
-      // let dia = 1;
+       let dia = 1;
 
-      // switch (dia) {
-      //   case 0:
-      //     console.log("Es domingo");
-      //     break;
-      //   case 1:
-      //     console.log("Es lunes");
-      //     break;
-      //   case 2:
-      //     console.log("Es martes");
-      //     break;
-      //   case 3:
-      //     console.log("Es miercoles");
-      //     break;
-      //   case 4:
-      //     console.log("Es jueves");
-      //     break;
-      //   case 5:
-      //     console.log("Es viernes");
-      //     break;
-      //   case 6:
-      //     console.log("Es sabado");
-      //     break;
-      //   default:
-      //     console.log("Opción incorrecta");
-      //     break;
-      // }
+       switch (dia) {
+         case 0:
+           console.log("Es domingo");
+           break;
+         case 1:
+           console.log("Es lunes");
+           break;
+         case 2:
+           console.log("Es martes");
+           break;
+         case 3:
+           console.log("Es miercoles");
+           break;
+         case 4:
+           console.log("Es jueves");
+           break;
+         case 5:
+           console.log("Es viernes");
+           break;
+         case 6:
+           console.log("Es sabado");
+           break;
+         default:
+           console.log("Opción incorrecta");
+           break;
+       }
+*/
+      // *******VIDEO 10*^******
+      // *******BUCLES********
+      /*
+     //WHILE Y DO-WHILE
 
-      //*******VIDEO 10*^******
-      //*******BUCLES********
+        let contador = 0;
 
-      //WHILE Y DO-WHILE
-
-      //  let contador = 0;
-
-      //  while(contador <= 10){
-      //    console.log(contador);
-      //    contador ++;
-      //  }
+        while(contador <= 10){
+          console.log(contador);
+          contador ++;
+        }
 
       //FOR
 
-      // for (let i = 0; i < 10; i++) {
-      //   console.log(i);
-      // }
+       for (let i = 0; i < 10; i++) {
+         console.log(i);
+       }
 
-      // let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+       let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
-      // for (let i = 0; i < numeros.length; i++) {
-      //    console.log(numeros[i]);
-      // }
+       for (let i = 0; i < numeros.length; i++) {
+          console.log(numeros[i]);
+       }
 
-      // const juanca = {
-      //   nombre: "Juan Carlos",
-      //   apellido: "Sánchez",
-      //   edad: 24,
-      // };
+       const juanca = {
+         nombre: "Juan Carlos",
+         apellido: "Sánchez",
+         edad: 24,
+       };
 
-      // for (const propiedad in juanca) {
-      //   console.log(`Key: ${propiedad}, Value: ${juanca[propiedad]}`);
-      // }
+       for (const propiedad in juanca) {
+         console.log(`Key: ${propiedad}, Value: ${juanca[propiedad]}`);
+       }
 
-      // for (const it of numeros) {
-      //   console.log(it);
-      // }
+       for (const it of numeros) {
+         console.log(it);
+       }
 
-      // let string = "Hola mundo";
+       let string = "Hola mundo";
 
-      // for (const it of string) {
-      //   console.log(it);
-      // }
-
+       for (const it of string) {
+         console.log(it);
+       }
+*/
       //********VIDEO 11*********
-
+      /*
       //MANEJO DE ERRORES
 
-      // try {
-      //   console.log("En el try se agrega el código a evaluar");
-      //   noExiste;
-      //   console.log("Segundo mensaje del try");
-      // } catch (error) {
-      //   console.log(
-      //     "Catch, captura cualquier error sugerido o lanzado en el try"
-      //   );
-      // } finally {
-      //   console.log("Se ejecutará siempre al final de un bloque try-catch");
-      // }
+       try {
+         console.log("En el try se agrega el código a evaluar");
+         noExiste;
+         console.log("Segundo mensaje del try");
+       } catch (error) {
+         console.log(
+           "Catch, captura cualquier error sugerido o lanzado en el try"
+         );
+       } finally {
+         console.log("Se ejecutará siempre al final de un bloque try-catch");
+       }
 
-      // try {
-      //   let numero = "a";
-      //   if(isNaN(numero)){
-      //     throw new Error("El dato introducido no es un número")
-      //   }
+       try {
+         let numero = "a";
+         if(isNaN(numero)){
+           throw new Error("El dato introducido no es un número")
+         }
 
-      //   console.log(numero * numero);
-      // } catch (error) {
-      //   console.log(`Se produjo el siguiente error: ${error}`)
-      // }
-
+         console.log(numero * numero);
+       } catch (error) {
+         console.log(`Se produjo el siguiente error: ${error}`)
+       }
+*/
       //********VIDEO 12*********
+      /*
+       const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-      // const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-      // for (let i = 0; i < numeros.length; i++) {
-      //   if (i === 5) {
-      //     break;
-      //   }
-      //   console.log(numeros[i]);
-      // }
-      // for (let i = 0; i < numeros.length; i++) {
-      //   if (i === 5) {
-      //     continue;
-      //   }
-      //   console.log(numeros[i]);
-      // }
-
+       for (let i = 0; i < numeros.length; i++) {
+         if (i === 5) {
+           break;
+         }
+         console.log(numeros[i]);
+       }
+       for (let i = 0; i < numeros.length; i++) {
+         if (i === 5) {
+           continue;
+         }
+         console.log(numeros[i]);
+       }
+*/
       //********VIDEO 13*********
-
-      //let numeros = [1, 2, 3];
+      /*
+      let numeros = [1, 2, 3];
 
       //Sin destructuración
-      // let uno = numeros[0],
-      //   dos = numeros[1],
-      //   tres = numeros[2];
+       let uno = numeros[0],
+         dos = numeros[1],
+         tres = numeros[2];
 
-      // console.log(uno, dos, tres);
+       console.log(uno, dos, tres);
 
       //Con destructuración
-      // const [one, two, three] = numeros;
-      // console.log(one, two, three);
+       const [one, two, three] = numeros;
+       console.log(one, two, three);
 
-      // let persona = {
-      //   nombre: "Juan Carlos",
-      //   apellido: "Sanchez",
-      //   edad: 24,
-      // };
+       let persona = {
+         nombre: "Juan Carlos",
+         apellido: "Sanchez",
+         edad: 24,
+       };
 
-      // let { nombre, apellido, edad } = persona;
-      // console.log(nombre, apellido, edad);
-
+       let { nombre, apellido, edad } = persona;
+       console.log(nombre, apellido, edad);
+*/
       //********VIDEO 14*********
+      /*
+       let nombre = "Juanca",
+         edad = 25;
 
-      // let nombre = "Juanca",
-      //   edad = 25;
+       const perro = {
+         nombre: nombre,
+         edad: edad,
+         ladrar: function () {
+           console.log("Guau Guau!!!!!");
+         },
+       };
 
-      // const perro = {
-      //   nombre: nombre,
-      //   edad: edad,
-      //   ladrar: function () {
-      //     console.log("Guau Guau!!!!!");
-      //   },
-      // };
+       console.log(perro);
+       perro.ladrar();
 
-      // console.log(perro);
-      // perro.ladrar();
-
-      // const dog = {
-      //   nombre,
-      //   edad,
-      //   raza: "Callejero",
-      //   ladrar() {
-      //     console.log("Guau Guau Guau");
-      //   },
-      // };
-      // console.log(dog);
-      // dog.ladrar();
-
+       const dog = {
+         nombre,
+         edad,
+         raza: "Callejero",
+         ladrar() {
+           console.log("Guau Guau Guau");
+         },
+       };
+       console.log(dog);
+       dog.ladrar();
+*/
       //********VIDEO 15*********
+      /*
+       function sumar(a, b, ...c) {
+         let res = a + b;
 
-      // function sumar(a, b, ...c) {
-      //   let res = a + b;
+         c.forEach(function (n) {
+           res += n;
+         });
 
-      //   c.forEach(function (n) {
-      //     res += n;
-      //   });
+         return res;
+       }
 
-      //   return res;
-      // }
+       console.log(sumar(1, 2));
+       console.log(sumar(1, 2, 3));
+       console.log(sumar(1, 2, 3, 4));
+       console.log(sumar(1, 2, 3, 4, 5));
+       console.log(sumar(1, 2, 3, 4, 5, 6));
+       console.log(sumar(1, 2, 3, 4, 5, 6, 7));
 
-      // console.log(sumar(1, 2));
-      // console.log(sumar(1, 2, 3));
-      // console.log(sumar(1, 2, 3, 4));
-      // console.log(sumar(1, 2, 3, 4, 5));
-      // console.log(sumar(1, 2, 3, 4, 5, 6));
-      // console.log(sumar(1, 2, 3, 4, 5, 6, 7));
+       const array1 = [1, 2, 3, 4, 5],
+         array2 = [6, 7, 8, 9, 0];
 
-      // const array1 = [1, 2, 3, 4, 5],
-      //   array2 = [6, 7, 8, 9, 0];
+       console.log(array1, array2);
 
-      // console.log(array1, array2);
-
-      // const array3 = [...array1, ...array2];
-      // console.log(array3);
-
+       const array3 = [...array1, ...array2];
+       console.log(array3);
+*/
       //********VIDEO 16*********
 
       /*
@@ -489,156 +490,171 @@
           -Métodos: son las acciones que un objeto
             puede realizar(son funciones dentro de un objeto)
         */
+      /*
+       const animal = {
+         nombre: "tobbi",
+         sonar() {
+           console.log("Hago ruido porque soy un ser vivo");
+         },
+       };
+       const animal2 = {
+         nombre: "casper",
+         sonar() {
+           console.log("Hago ruido porque soy un ser vivo");
+         },
+       };
 
-      // const animal = {
-      //   nombre: "tobbi",
-      //   sonar() {
-      //     console.log("Hago ruido porque soy un ser vivo");
-      //   },
-      // };
-      // const animal2 = {
-      //   nombre: "casper",
-      //   sonar() {
-      //     console.log("Hago ruido porque soy un ser vivo");
-      //   },
-      // };
-
-      // console.log(animal);
-      // console.log(animal2);
+       console.log(animal);
+       console.log(animal2);
 
       //*********Función constructora----VERSION 1*********
-      // function Animal(nombre, genero) {
-      //   //Atributos
-      //   this.nombre = nombre;
-      //   this.genero = genero;
+       function Animal(nombre, genero) {
+         Atributos
+         this.nombre = nombre;
+         this.genero = genero;
 
-      //Metodos
-      //   this.sonar = function () {
-      //     console.log("Hago ruido porque estoy vivo");
-      //   };
-      //   this.saludar = function () {
-      //     console.log(`Hola me llamo ${this.nombre}`);
-      //   };
-      // }
+      Metodos
+         this.sonar = function () {
+           console.log("Hago ruido porque estoy vivo");
+         };
+         this.saludar = function () {
+           console.log(`Hola me llamo ${this.nombre}`);
+         };
+       }
 
-      // const tobbi = new Animal("tobbi", "macho"),
-      //   cala = new Animal("cala", "hembra");
+       const tobbi = new Animal("tobbi", "macho"),
+         cala = new Animal("cala", "hembra");
 
-      // console.log(tobbi);
-      // console.log(cala);
+       console.log(tobbi);
+       console.log(cala);
 
       //*********Función constructora----VERSION 2*********
-      //  function Animal(nombre, genero) {
-      //    //Atributos
-      //    this.nombre = nombre;
-      //    this.genero = genero;
-      //  }
+        function Animal(nombre, genero) {
+          Atributos
+          this.nombre = nombre;
+          this.genero = genero;
+        }
 
-      // //Metodos
-      //  Animal.prototype.sonar = function () {
-      //    console.log("Hago ruido porque estoy vivo");
-      //  };
-      //  Animal.prototype.saludar = function () {
-      //    console.log(`Hola me llamo ${this.nombre}`);
-      //  };
+       Metodos
+        Animal.prototype.sonar = function () {
+          console.log("Hago ruido porque estoy vivo");
+        };
+        Animal.prototype.saludar = function () {
+          console.log(`Hola me llamo ${this.nombre}`);
+        };
 
-      // //Herencia prototípica
-      //  function Perro(nombre, genero, tamanio) {
-      //    this.super = Animal;
-      //    this.super(nombre, genero);
-      //    this.tamanio = tamanio;
-      //  }
+       //Herencia prototípica
+        function Perro(nombre, genero, tamanio) {
+          this.super = Animal;
+          this.super(nombre, genero);
+          this.tamanio = tamanio;
+        }
 
-      // //Perro está heredando de animal
-      //  Perro.prototype = new Animal();
-      //  Perro.prototype.constructor = Perro;
+       //Perro está heredando de animal
+        Perro.prototype = new Animal();
+        Perro.prototype.constructor = Perro;
 
-      // //Sobreescritura de metodos del Prototipo Padre en el hijo
-      //  Perro.prototype.sonar = function () {
-      //    console.log("Soy un perro y mi sonido es un ladrido");
-      //  };
+      // Sobreescritura de metodos del Prototipo Padre en el hijo
+        Perro.prototype.sonar = function () {
+          console.log("Soy un perro y mi sonido es un ladrido");
+        };
 
-      //  Perro.prototype.ladrar = function () {
-      //    console.log("Guauuuuu");
-      //  };
+        Perro.prototype.ladrar = function () {
+          console.log("Guauuuuu");
+        };
 
-      //  const tobbi = new Perro("tobbi", "macho", "mediano"),
-      //    cala = new Animal("cala", "hembra");
+        const tobbi = new Perro("tobbi", "macho", "mediano"),
+          cala = new Animal("cala", "hembra");
 
-      //  console.log(tobbi);
-      //  console.log(cala);
+        console.log(tobbi);
+        console.log(cala);
 
-      //  tobbi.sonar();
-      //  cala.sonar();
+        tobbi.sonar();
+        cala.sonar();
 
-      //  tobbi.saludar();
-      //  cala.saludar();
+        tobbi.saludar();
+        cala.saludar();
 
-      //  tobbi.ladrar();
-
+        tobbi.ladrar();
+        */
       //********VIDEO 17*********
 
-      // class Articulo {
-      //   constructor(nombre, color) {
-      //     this.nombre = nombre;
-      //     this.color = color;
-      //   }
+      /*class Articulo {
+        constructor(nombre, color) {
+          this.nombre = nombre;
+          this.color = color;
+        }
 
-      //   //Metodos
-      //   presentar() {
-      //     console.log(`Soy un/a ${this.nombre} y soy de color ${this.color}`);
-      //   }
-      //   romper() {
-      //     console.log(`El ${this.nombre} se ha roto`);
-      //   }
-      // }
+        Metodos
+        presentar() {
+          console.log(`Soy un/a ${this.nombre} y soy de color ${this.color}`);
+        }
+        romper() {
+          console.log(`El ${this.nombre} se ha roto`);
+        }
+      }
 
-      // class Fragil extends Articulo {
-      //   constructor(nombre, color, material) {
-      //     super(nombre, color);
-      //     this.material = material;
-      //     this.peso = null;
-      //   }
+      class Fragil extends Articulo {
+        constructor(nombre, color, material) {
+          super(nombre, color);
+          this.material = material;
+          this.peso = null;
+        }
 
-      //   romper() {
-      //     console.log(`El ${this.nombre} de ${this.material} se ha roto`);
-      //   }
+        romper() {
+          console.log(`El ${this.nombre} de ${this.material} se ha roto`);
+        }
 
-      //   cuidar() {
-      //     console.log(
-      //       `Soy de ${this.material}, tened cuidado al transportarme`
-      //     );
-      //   }
+        cuidar() {
+          console.log(
+            `Soy de ${this.material}, tened cuidado al transportarme`
+          );
+        }
 
-      //   static queEres() {
-      //     console.log(
-      //       "Somos articulos frágiles con los que hay que tener\ncierto cuidado al transportarnos."
-      //     );
-      //   }
+        static queEres() {
+          console.log(
+            "Somos articulos frágiles con los que hay que tener\ncierto cuidado al transportarnos."
+          );
+        }
 
-      //   get getPeso() {
-      //     return this.peso;
-      //   }
+        get getPeso() {
+          return this.peso;
+        }
 
-      //   set setPeso(peso) {
-      //     this.peso = peso;
-      //   }
-      // }
+        set setPeso(peso) {
+          this.peso = peso;
+        }
+      }
 
-      // //Fragil.queEres();
+      Fragil.queEres();
 
-      // const atril = new Fragil("atril", "gris", "cristal"),
-      //   teclado = new Articulo("teclado", "blanco");
+      const atril = new Fragil("atril", "gris", "cristal"),
+        teclado = new Articulo("teclado", "blanco");
 
-      //  console.log(atril);
-      //  console.log(teclado);
-      // // atril.romper();
-      // // teclado.presentar();
-      // // atril.cuidar();
+       console.log(atril);
+       console.log(teclado);
+       atril.romper();
+       teclado.presentar();
+       atril.cuidar();
 
-      // console.log(atril.getPeso);
-      // atril.setPeso = "10g";
-      // console.log(atril.getPeso);
+      console.log(atril.getPeso);
+      atril.setPeso = "10g";
+      console.log(atril.getPeso);ss
+      
+
+      console.log(Date());
+
+      let fecha = new Date();
+      console.log(fecha);
+      //Dia del mes
+      console.log(fecha.getDate());
+      //Día de la semana en numero
+      console.log(fecha.getDay());
+      //Obtener el año
+      console.log(fecha.getFullYear());
+
+      console.log(fecha.getHours()+ ":"+fecha.getMinutes()+":"+fecha.getSeconds());
+      */
     </script>
   </body>
 </html>
