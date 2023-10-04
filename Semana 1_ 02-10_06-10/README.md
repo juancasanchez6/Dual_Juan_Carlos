@@ -1,5 +1,5 @@
 # Semana 1
-### Cosas vistas
+## Cosas vistas
 <ul>
   <li>Variables, const, Strings, Números, booleanos, null/NaN</li>
   <li>Funciones</li>
