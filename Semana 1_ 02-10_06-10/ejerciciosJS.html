@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>EJERCICIOS DE LOGICA DE PROGRAMACION CLASE 1</h1>
+    <script>
+      
+      //**********EJERCICIO 1**********
+      /* 1) Programa una función que cuente el número de caracteres de una cadena de
+    texto, pe. miFunción("Hola Mundo") devolverá 10 */
+      function contarCaracteres(cadena) {
+        return cadena.length;
+      }
+      let texto = "Me llamo Juan Carlos";
+      let cont = contarCaracteres(texto);
+      console.log(`Hay un total de ${cont} carácteres`);
+      
+
+      //**********EJERCICIO 2**********
+       /* 2) Programa una función que te devuelva el texto recortado según el número de
+    caracteres indicados,
+    El pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
+      function recortarTexto(cadena, num) {
+        cadena = cadena.slice(0, num);
+        return cadena;
+      }
+
+      let texto = "Me llamo Juan Carlos";
+      let res = recortarTexto(texto, 7);
+      console.log(res);
+      
+
+      //**********EJERCICIO 3**********
+       /* 3) Programa una función que dada una String te devuelva un Array de textos
+    separados por cierto caracter, pe.
+    mifuncion ('hola que tal'*, "') devolverá ['hola', 'que', 'tal'] */
+      
+      function separarCadena(texto, divisor){
+        let arrayCadena = [];
+        arrayCadena = texto.split(divisor);
+        console.log( arrayCadena);
+        
+      }
+
+      separarCadena("Hola mi nombre es Juan Carlos", " ");
+      
+
+      //**********EJERCICIO 4**********
+       /* 4) Programa una función que repeta un texto X veces, pe. miFuncion(Hola
+    Mundo', 3) devolverá Hola Mundo Hola Mundo
+    Hola Mundo */
+      function repetirTexto(texto, veces) {
+        for (let i = 1; i <= veces; i++) {
+          console.log(`${i}: ${texto}`);
+        }
+      }
+      repetirTexto("Hola Javi", 4);
+      
+
+      //**********EJERCICIO 5**********
+      /*5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola
+        Mundo") devolverá "odnuM aloH" */
+      
+      const invertirCadena = (cadena) => {
+        array0 = [];
+        array0 = cadena.split("");
+        cadenaInvert = "";
+        for (let i = array0.length-1; i >= 0; i--) {
+          cadenaInvert += array0[i];
+        }
+        console.log(cadenaInvert);
+      };
+
+      invertirCadena("Hola Juan Carlos");
+      
+
+      //**********EJERCICIO 6**********
+      /* 6) Programa una función para contar el número de veces que se repite una palabra en un texto
+        largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
+      
+      const contarPalabrasRep = (cadena, palabra) => {
+        let rep = new RegExp("\\b" + palabra + "\\b", "gi");
+        let cont = cadena.match(rep);
+
+        if (cont === null) {
+          return 0;
+        } else {
+          return cont.length;
+        }
+      };
+      let res = contarPalabrasRep(
+        "Hola mi nombre es Juan, mi edad es 24 y mi pelo es oscuro",
+        "mi"
+      );
+
+      console.log(res);
+      
+      //**********EJERCICIO 7**********
+      /* 7) Programa una función que valide si una palabra o frase dada, es un palíndromo
+        (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true */
+      
+      const textoPalindromo = (texto) => {
+        let textOrg = texto.slice(0);
+        arrayInv = [];
+        arrayInv = texto.split("");
+        let textInv = "";
+        for (let i = texto.length - 1; i >= 0; i--) {
+          textInv += arrayInv[i];
+        }
+
+        if (textOrg === textInv) {
+          return true;
+        } else {
+          return false;
+        }
+        // console.log(textOrg);
+        // console.log(textInv);
+      };
+
+      let palindromo = textoPalindromo("perro");
+      console.log(palindromo);
+      let palindromo2 = textoPalindromo("salas");
+      console.log(palindromo2);
+      
+
+      //**********EJERCICIO 8**********
+      /* 8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion
+        ("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá. "1, 2, 3, 4 y 5 */
+      
+      const eliminarPatron = (texto, patron) => {
+        let eliminada = new RegExp(patron, "g");
+        let encontrada = texto.replace(eliminada,"");
+        return encontrada;
+      };
+      let res = eliminarPatron("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
+      console.log(res);
+      
+    </script>
+  </body>
+</html>
