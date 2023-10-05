@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>EJERCICIOS DE LOGICA DE PROGRAMACION CLASE 1</h1>
+    <script>
+      /* 1) Programa una función que cuente el número de caracteres de una cadena de
+    texto, pe. miFunción("Hola Mundo") devolverá 10 */
+      /* 2) Programa una función que te devuelva el texto recortado según el número de
+    caracteres indicados,
+    El pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
+      /* 3) Programa una función que dada una String te devuelva un Array de textos
+    separados por cierto caracter, pe.
+    mifuncion ('hola que tal'*, "') devolverá ['hola', 'que', 'tal'] */
+      /* 4) Programa una función que repeta un texto X veces, pe. miFuncion(Hola
+    Mundo', 3) devolverá Hola Mundo Hola Mundo
+    Hola Mundo */
+
+      //**********EJERCICIO 1**********
+      /*
+      function contarCaracteres(cadena) {
+        return cadena.length;
+      }
+      let texto = "Me llamo Juan Carlos";
+      let cont = contarCaracteres(texto);
+      console.log(`Hay un total de ${cont} carácteres`);
+      */
+
+      //**********EJERCICIO 2**********
+      /*
+      function recortarTexto(cadena, num) {
+        cadena = cadena.slice(0, num);
+        return cadena;
+      }
+
+      let texto = "Me llamo Juan Carlos";
+      let res = recortarTexto(texto, 7);
+      console.log(res);
+      */
+
+      //**********EJERCICIO 3**********
+      /*
+      function separarCadena(texto, divisor){
+        let arrayCadena = [];
+        arrayCadena = texto.split(divisor);
+        console.log( arrayCadena);
+        
+      }
+
+      separarCadena("Hola mi nombre es Juan Carlos", " ");
+      */
+
+      //**********EJERCICIO 4**********
+      /* 
+      function repetirTexto(texto, veces) {
+        for (let i = 1; i <= veces; i++) {
+          console.log(`${i}: ${texto}`);
+        }
+      }
+      repetirTexto("Hola Javi", 4);
+      */
+    </script>
+  </body>
+</html>
