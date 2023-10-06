@@ -158,11 +158,11 @@
         (que se lee igual en un sentido que en otro), pe. miFuncion(2002) 
         devolverá true.
       */
-      const numCapicua = (numero) => {
+     const numCapicua = (numero) => {
         let numText = numero.toString();
-        numText = [];
+        let numArray = [...numText];
         let numInv = "";
-        for (let i = numText.length; i >= 0; i--) {
+        for (let i = numText.length-1; i >= 0; i--) {
           numInv += numText[i];
         }
         numInvT = numInv.toString();
@@ -172,7 +172,7 @@
           return false;
         }
       };
-      console.log(numCapicua(22222));
+      console.log(numCapicua(123454321));
       
     </script>
   </body>
