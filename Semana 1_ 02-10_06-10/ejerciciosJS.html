@@ -233,6 +233,30 @@
 
       parImpar(200);
       parImpar(253);
+
+      //**********EJERCICIO 14**********
+      /*
+      14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa,
+        pe. miFuncion(0,"C") devolverá 32°F.
+      */
+     const convertirGrados = (numero, grados) => {
+        let gradosC = 0,
+            gradosF = 0;
+
+        if (grados === "C"){
+            gradosF = numero + 32;
+            return console.log(`La conversión a Fahrenheit = ${gradosF}ºF `)
+        } else if (grados === "F"){
+            gradosC = numero - 32;
+            return console.log(`La conversión a Celsius = ${gradosC}ºC `)
+        }else {
+            return console.log("La unidad introducida no es correcta")
+        }
+     }
+
+     convertirGrados(43,"F")
+     convertirGrados(7,"C")
+     convertirGrados(10,"X")
       
     </script>
   </body>
