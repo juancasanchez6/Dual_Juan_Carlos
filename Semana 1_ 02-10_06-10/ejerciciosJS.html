@@ -182,6 +182,12 @@
         pe. miFuncion(5) devolverá 120.
          */
       const factorial = (numero) => {
+        if(numero === undefined){
+            return console.warn("No ingresaste numero")
+        }
+        if (typeof numero !== "number"){
+            return console.warn("El valor ingresado no es un numero")
+        }
         let res = 1;
         for (let i = 1; i <= numero; i++) {
           res *= i;   
