@@ -195,6 +195,44 @@
         return res;
       };
       console.log(factorial(10));
+
+       //**********EJERCICIO 12**********
+      /*
+      12) Programa una función que determine si un número es primo 
+      (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true.
+     */
+      const esPrimo = (numero) => {
+        if (numero <= 1) {
+          return false;
+        }
+        //Recorremos desde 2 hast la raiz del numero para buscar divisores
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+          if (numero % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      console.log(esPrimo(7));
+      console.log(esPrimo(12));
+      console.log(esPrimo(29));
+
+      //**********EJERCICIO 13**********
+      /*
+      13) Programa una función que determine si un número es par o impar, pe. miFuncion(29)
+        devolverá Impar.
+      */
+
+      const parImpar = (numero) => {
+        if (numero % 2 === 0) {
+          return console.log(`el numero ${numero} es un numero par`);
+        } else {
+          return console.log(`el numero ${numero} es un numero impar`);
+        }
+      };
+
+      parImpar(200);
+      parImpar(253);
       
     </script>
   </body>
