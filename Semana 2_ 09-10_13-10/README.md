@@ -11,4 +11,4 @@
   <p>He empezado la semana terminando los ejercicios de lógica que no me dió tiempo a acabar la semana pasada y posteriormente he seguido con el curso de JavaSript</p>
 
   ## Actividad por la tarde
-  <p></p>
+  <p>Me estoy dedicando a hacer ejercicios más complejos que por la mañana. Estoy probando ejercicios con clases, métodos estáticos...</p>
