@@ -258,7 +258,32 @@
      convertirGrados(7,"C")
      convertirGrados(10,"X")
 
-      ### SEMANA 2*******
+      // *******SEMANA 2*******
+      
+      //**********EJERCICIO 15**********
+      /*
+      15) Programa una función para convertir números de base binaria a decimal y viceversa,
+      pe. miFuncion(100,2) devolverá 4 base 10.
+      */
+       const convertirBinDec = (numero, base) => {
+        if (numero === undefined)
+          return console.warn("No ingresó el número correctamente");
+        if (typeof numero !== "number")
+          return console.warn(`El valor ${numero} no es un numero`);
+        if (base === undefined)
+          return console.warn("No ingresó la base correctamente");
+        if (typeof base !== "number")
+          return console.warn(`El valor ${base} no es una base correcta`);
+
+        if (base === 2) {
+          return console.info(
+            `${numero} base ${base} = ${parseInt(numero, base)} base 10`
+          );
+        }
+      };
+      convertirBinDec(100, 2);
+      convertirBinDec(1111, 2);
+      
     </script>
   </body>
 </html>
