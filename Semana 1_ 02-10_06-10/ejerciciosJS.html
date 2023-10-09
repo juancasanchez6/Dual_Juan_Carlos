@@ -345,9 +345,8 @@
        y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
       */
 
-      const contarCaracter = (cadena) => {
-        if (!cadena)
-          return console.warn("No ha introducido ninguna cadena");
+     const contarCaracter = (cadena) => {
+        if (!cadena) return console.warn("No ha introducido ninguna cadena");
         if (typeof cadena !== "string")
           return console.warn(
             `El valor ${cadena} no es una cadena de caracteres`
@@ -365,9 +364,11 @@
             consonantes++;
           }
         }
-        return console.info(
-          `En la frase "${cadena}" hay: ${vocales} vocales y ${consonantes} consonantes`
-        );
+        return console.info({
+          cadena,
+          vocales,
+          consonantes,
+        });
       };
 
       contarCaracter("");
