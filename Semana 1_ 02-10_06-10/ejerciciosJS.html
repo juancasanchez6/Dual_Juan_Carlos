@@ -374,6 +374,29 @@
       contarCaracter("");
       contarCaracter(23456);
       contarCaracter("Hola me llamo Juan Carlos y tengo 24 años");
+
+      //**********EJERCICIO 19**********
+      /*
+      19) Programa una función que valide que un texto sea un nombre válido,
+        pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+      */
+
+      const validarNombre = (nombre) => {
+        if (!nombre) return console.warn("No se ha introducido ningun nombre");
+        if (typeof nombre !== "string")
+          return console.warn("No ha introducido un valor tipo cadena");
+
+        if (/^[A-Z][a-z]*([\s][A-Z][a-z]*)*$/.test(nombre)) {
+          return console.log(`"${nombre}" SI es un nombre válido.`);
+        } else {
+          return console.log(`"${nombre}" NO es un nombre válido.`);
+        }
+      };
+
+      validarNombre();
+      validarNombre("Juan Sanchez");
+      validarNombre("Juan-Carlos Sanchez");
+      validarNombre(1234);
     </script>
   </body>
 </html>
