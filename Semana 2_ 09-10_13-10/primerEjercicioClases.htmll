@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            27) Programa una clase llamada Pelicula.
+
+                La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.
+                - Todos los datos del objeto son obligatorios.
+                - Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los
+                    7 restantes números.
+                - Valida que el título no rebase los 100 caracteres.
+                - Valida que el director no rebase los 50 caracteres.
+                - Valida que el año de estreno sea un número entero de 4 dígitos.
+                - Valida que el país o paises sea introducidos en forma de arreglo.
+                - Valida que los géneros sean introducidos en forma de arreglo.
+                - Valida que los géneros introducidos esten dentro de los géneros
+                    aceptados*.
+                - Crea un método estático que devuelva los géneros aceptados*.
+                - Valida que la calificación sea un número entre 0 y 10 pudiendo ser
+                    decimal de una posición.
+                - Crea un método que devuelva toda la ficha técnica de la película.
+                - Apartir de un arreglo con la información de 3 películas genera 3
+                    instancias de la clase de forma automatizada e imprime la ficha técnica
+                    de cada película.
+        */
+
+      class Pelicula {
+        constructor(
+          id,
+          titulo,
+          director,
+          fechaEstreno,
+          pais,
+          genero,
+          calificacion
+        ) {
+          this.id = id;
+          this.titulo = titulo;
+          this.director = director;
+          this.fechaEstreno = fechaEstreno;
+          this.pais = pais;
+          this.genero = genero;
+          this.calificacion = calificacion;
+        }
+
+        validarCadena(dato, valor) {
+          if (!valor) return console.warn(`${propiedad} "${valor}" está vacío`);
+          if (valor !== "string")
+            return console.error(
+              `Error: ${propiedad} "${valor}" ingresado NO es una cadena de texto`
+            );
+          return true;
+        }
+
+        validarLongitud(dato, cadena, longitud) {
+          if (cadena.length > longitud)
+            return console.error(
+              `ERROR: ${propiedad} excede el numero de caracter permitidos (${longitud})`
+            );
+        }
+
+        validarIMDB(id) {
+          if (this.validarCadena("IMDB id", id))
+            if (!/^([a-z]){2}([0-9]){7}$/.test(id))
+              return console.error(
+                `ERROR: El IMDB id introducido no es válido, asegúrese de escribir bien el formato`
+              );
+        }
+
+        validarTitulo(titulo) {
+          if (this.validarCadena("Título", titulo))
+            this.validarLongitud("Título", titulo, 100);
+        }
+        validarDirector(director) {
+          if (this.validarCadena("Director", director))
+            this.validarLongitud("Director", director, 50);
+        }
+
+        validarfecha(fecha) {
+          if (typeof fecha !== "number")
+            return console.error(`ERROR: el dato "${fecha}" no es válido`);
+          if (!/^([0-9]){4}$/.test(fecha))
+            return console.error(
+              `La fecha de estreno "${fecha}" no debe superar los 4 dígitos`
+            );
+        }
+
+        validarPais(pais) {
+          if (!Array.isArray(pais))
+            return console.log(
+              `ERROR: los paises "${pais}" no están introducidos como array `
+            );
+
+          for (let cadena of pais) {
+            if (typeof cadena !== "string")
+              return console.log(
+                `ERROR: El valor "${cadena} no es una cadena de texto"`
+              );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
