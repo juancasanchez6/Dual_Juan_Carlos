@@ -163,6 +163,26 @@
         console.log(arrayCuad);
       };
       arrayCuadrado([1, 3, 4, 6, 2]);
+
+        /******** EJERCICIO 22 ********
+      /*
+        22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array,
+         pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60].
+        */
+
+      const arrayMaxMin = (array) => {
+        let max = 0,
+          min = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] > max) {
+            max = array[i];
+          } else if (array[i] < min) {
+            min = array[i];
+          }
+        }
+        console.log(`El máximo es: ${max} y el mínimo: ${min}`);
+      };
+      arrayMaxMin([1, 3, 4, 6, 2, -3]);
     </script>
 </body>
 </html>
