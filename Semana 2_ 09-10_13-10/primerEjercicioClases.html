@@ -6,40 +6,41 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>PRIMER EJERCICIO PRÁCTICO CON CLASES</h1>
     <script>
       /*
-            27) Programa una clase llamada Pelicula.
+        27) Programa una clase llamada Pelicula.
 
-                La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.
-                - Todos los datos del objeto son obligatorios.
-                - Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los
-                    7 restantes números.
-                - Valida que el título no rebase los 100 caracteres.
-                - Valida que el director no rebase los 50 caracteres.
-                - Valida que el año de estreno sea un número entero de 4 dígitos.
-                - Valida que el país o paises sea introducidos en forma de arreglo.
-                - Valida que los géneros sean introducidos en forma de arreglo.
-                - Valida que los géneros introducidos esten dentro de los géneros
-                    aceptados*.
-                - Crea un método estático que devuelva los géneros aceptados*.
-                - Valida que la calificación sea un número entre 0 y 10 pudiendo ser
-                    decimal de una posición.
-                - Crea un método que devuelva toda la ficha técnica de la película.
-                - Apartir de un arreglo con la información de 3 películas genera 3
-                    instancias de la clase de forma automatizada e imprime la ficha técnica
-                    de cada película.
-        */
+          La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.
+          - Todos los datos del objeto son obligatorios.
+          - Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los
+              7 restantes números.
+          - Valida que el título no rebase los 100 caracteres.
+          - Valida que el director no rebase los 50 caracteres.
+          - Valida que el año de estreno sea un número entero de 4 dígitos.
+          - Valida que el país o paises sea introducidos en forma de arreglo.
+          - Valida que los géneros sean introducidos en forma de arreglo.
+          - Valida que los géneros introducidos esten dentro de los géneros
+              aceptados*.
+          - Crea un método estático que devuelva los géneros aceptados*.
+          - Valida que la calificación sea un número entre 0 y 10 pudiendo ser
+              decimal de una posición.
+          - Crea un método que devuelva toda la ficha técnica de la película.
+          - Apartir de un arreglo con la información de 3 películas genera 3
+              instancias de la clase de forma automatizada e imprime la ficha técnica
+              de cada película.
+      */
 
       class Pelicula {
-        constructor(
+        constructor({
           id,
           titulo,
           director,
           fechaEstreno,
           pais,
           genero,
-          calificacion
-        ) {
+          calificacion,
+        }) {
           this.id = id;
           this.titulo = titulo;
           this.director = director;
@@ -47,22 +48,96 @@
           this.pais = pais;
           this.genero = genero;
           this.calificacion = calificacion;
+
+          this.validarIMDB(id);
+          this.validarTitulo(titulo);
+          this.validarDirector(director);
+          this.validarfecha(fechaEstreno);
+          this.validarPais(pais);
+          this.validarGeneros(genero);
+          this.validarCalificacion(calificacion);
         }
 
-        validarCadena(dato, valor) {
+        static get listadoGeneros() {
+          return [
+            "Action",
+            "Adult",
+            "Adventure",
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama",
+            "Family",
+            "Fantasy",
+            "Film Noir",
+            "Game-Show",
+            "History",
+            "Horror",
+            "Musical",
+            "Music",
+            "Mystery",
+            "News",
+            "Reality-TV",
+            "Romance",
+            "Sci-Fi",
+            "Short",
+            "Sport",
+            "Talk-Show",
+            "Thriller",
+            "War",
+            "Western",
+          ];
+        }
+
+        static generosAceptados() {
+          return console.info(
+            `Los géneros aceptados son: ${Pelicula.listadoGeneros.join(", ")}`
+          );
+        }
+
+        validarCadena(propiedad, valor) {
           if (!valor) return console.warn(`${propiedad} "${valor}" está vacío`);
-          if (valor !== "string")
+          if (typeof valor !== "string")
             return console.error(
-              `Error: ${propiedad} "${valor}" ingresado NO es una cadena de texto`
+              `Error: El ${propiedad} "${valor}" ingresado NO es una cadena de texto`
             );
           return true;
         }
 
-        validarLongitud(dato, cadena, longitud) {
+        validarLongitud(propiedad, cadena, longitud) {
           if (cadena.length > longitud)
             return console.error(
               `ERROR: ${propiedad} excede el numero de caracter permitidos (${longitud})`
             );
+          return true;
+        }
+
+        validarNumero(propiedad, valor) {
+          if (!valor) return console.warn(`${propiedad} "${valor}" está vacío`);
+          if (typeof valor !== "number")
+            return console.error(`${propiedad} "${valor}" NO es un número`);
+          return true;
+        }
+
+        validarArray(propiedad, valor) {
+          if (!valor) return console.warn(`${propiedad} "${valor}" está vacío`);
+
+          if (!(valor instanceof Array))
+            return console.error(`${propiedad} "${valor}" NO es un Array`);
+
+          if (valor.length === 0)
+            return console.error(`${propiedad} "${valor}" no tiene datos`);
+
+          for (const cadena of valor) {
+            if (typeof cadena !== "string")
+              return console.error(
+                `El valor ${cadena} ingresado NO es una cadena de texto`
+              );
+          }
+
+          return true;
         }
 
         validarIMDB(id) {
@@ -77,34 +152,89 @@
           if (this.validarCadena("Título", titulo))
             this.validarLongitud("Título", titulo, 100);
         }
+
         validarDirector(director) {
           if (this.validarCadena("Director", director))
             this.validarLongitud("Director", director, 50);
         }
 
         validarfecha(fecha) {
-          if (typeof fecha !== "number")
-            return console.error(`ERROR: el dato "${fecha}" no es válido`);
-          if (!/^([0-9]){4}$/.test(fecha))
-            return console.error(
-              `La fecha de estreno "${fecha}" no debe superar los 4 dígitos`
-            );
+          if (this.validarNumero("Fecha de estreno", fecha))
+            if (!/^([0-9]){4}$/.test(fecha))
+              return console.error(
+                `La fecha de estreno "${fecha}" debe ser un numero de 4 dígitos`
+              );
         }
 
         validarPais(pais) {
-          if (!Array.isArray(pais))
-            return console.log(
-              `ERROR: los paises "${pais}" no están introducidos como array `
-            );
+          this.validarArray("País", pais);
+        }
 
-          for (let cadena of pais) {
-            if (typeof cadena !== "string")
-              return console.log(
-                `ERROR: El valor "${cadena} no es una cadena de texto"`
-              );
+        validarGeneros(genero) {
+          if (this.validarArray("Géneros", genero)) {
+            for (let it of genero) {
+              //console.log(it, Pelicula.listadoGeneros.includes(it));
+              if (!Pelicula.listadoGeneros.includes(it)) {
+                console.error(`Genero(s) incorrectos "${genero.join(", ")}"`);
+                Pelicula.generosAceptados();
+              }
+            }
           }
         }
+
+        validarCalificacion(calificacion) {
+          if (this.validarNumero("Calificación", calificacion))
+            return calificacion < 0 || calificacion > 10
+              ? console.error("La calificacion tiene que estar entre 0 y 10")
+              : (this.calificacion = calificacion.toFixed(1));
+        }
+
+        fichaTecnica() {
+          console.info(
+            ` Ficha Técnica:\nTítulo: "${this.titulo}"\nDirector:"${
+              this.director
+            }"\nAño:"${this.estreno}"\nPaís:"${this.pais.join(
+              "-"
+            )}"\nGéneros:"${this.genero.join(", ")}"\nCalificación:"${
+              this.calificacion
+            }"\nIMDB(Id):"${this.id}."`
+          );
+        }
       }
+
+      const misPelis = [
+        {
+          id: "tt0816692",
+          titulo: "Interestellar",
+          director: "Christopher Nolan",
+          fechaEstreno: 2014,
+          pais: ["USA", "Reino Unido", "Canada"],
+          genero: ["Action", "Drama"],
+          calificacion: 8.91,
+        },
+        {
+          id: "tt1375666",
+          titulo: "Inception",
+          director: "Christopher Nolan",
+          fechaEstreno: 2000,
+          pais: ["USA", "Reino Unido"],
+          genero: ["Thriller", "Drama"],
+          calificacion: 9.6,
+        },
+        {
+          id: "tt0172495",
+          titulo: "Gladiator",
+          director: "Ridley Scott",
+          fechaEstreno: 2000,
+          pais: ["USA"],
+          genero: ["Adventure", "Drama"],
+          calificacion: 9.3,
+        },
+      ];
+
+      misPelis.forEach((elem) => new Pelicula(elem).fichaTecnica());
+      //peli.fichaTecnica();
+      //console.log(peli);
     </script>
   </body>
 </html>
