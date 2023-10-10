@@ -147,6 +147,22 @@
       validarNombre("Juan Sanchez");
       validarNombre("Juan-Carlos Sanchez");
       validarNombre(1234);
+
+
+        //******** EJERCICIO 21 ********
+      /*
+        21) Programa una función que dado un array numérico devuelve otro array
+         con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].
+        */
+
+      const arrayCuadrado = (array) => {
+        arrayCuad = [];
+        for (let i = 0; i < array.length; i++) {
+          arrayCuad[i] = array[i] * array[i];
+        }
+        console.log(arrayCuad);
+      };
+      arrayCuadrado([1, 3, 4, 6, 2]);
     </script>
 </body>
 </html>
