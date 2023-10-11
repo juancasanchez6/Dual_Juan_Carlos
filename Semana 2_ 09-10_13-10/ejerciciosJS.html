@@ -166,14 +166,21 @@
           if (typeof i !== "number")
             return console.error(`El valor "${i}" NO es un número`);
         }
+          //OPCION 1 (MAS CODIGO Y MENOS LIMPIA)
         arrayCuad = [];
         for (let i = 0; i < array.length; i++) {
           arrayCuad[i] = array[i] * array[i];
         }
         console.log(arrayCuad);
+          //OPCION 2 (MÁS CLARA Y MÁS OPTIMIZADA)    
+         const arrayCuadrado = array.map((elem) => elem * elem);
+        return console.info(
+          `Array original: [${array}]\nArray elevado al cuadrado: [${arrayCuadrado}]`
+        );
       };
       arrayCuadrado([1, 3, 4, 6, 2]);
 
+        
         /******** EJERCICIO 22 ********
       /*
         22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array,
@@ -191,6 +198,7 @@
           if (typeof i !== "number")
             return console.error(`El valor "${i}" NO es un número`);
         }
+          //OPCION 1 (MAS CODIGO Y MENOS LIMPIA)
         let max = 0,
           min = 0;
         for (let i = 0; i < array.length; i++) {
@@ -201,6 +209,12 @@
           }
         }
         console.log(`El máximo es: ${max} y el mínimo: ${min}`);
+          //OPCION 2 (MÁS CLARA Y MÁS OPTIMIZADA)
+          return console.info(
+          `Array original: [${array}]\nMáximo: "${Math.max(
+            ...array
+          )}"\nMínimo: "${Math.min(...array)}"`
+        );
       };
       arrayMaxMin([1, 3, 4, 6, 2, -3]);
 
@@ -222,6 +236,7 @@
           if (typeof i !== "number")
             return console.error(`El valor "${i}" NO es un número`);
         }
+           //OPCION 1 (MAS CODIGO Y MENOS LIMPIA)
         arrayPares = [];
         arrayImpares = [];
         for (let i = 0; i < array.length; i++) {
@@ -234,6 +249,11 @@
         console.log(
           `El array de números pares es: [${arrayPares}]\nEl array de números impares es: [${arrayImpares}]`
         );
+          //OPCION 2 (MÁS CLARA Y MÁS OPTIMIZADA)
+          return console.info({
+          pares: array.filter(num => num % 2 === 0),
+          impares: array.filter(num => num % 2 !== 0),
+        });
       };
       arrayParesImpares([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
     </script>
