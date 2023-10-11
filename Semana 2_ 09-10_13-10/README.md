@@ -7,8 +7,8 @@
   <li>Promesas</li>
   <li>Async y await</li>
   <li>Símbolos: Symbol()</li>
-  <li>Set</li>
-  <li>Map</li>
+  <li>Set()</li>
+  <li>Map()</li>
 </ul>
 
 ## Actividad por la mañana
