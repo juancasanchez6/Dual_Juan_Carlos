@@ -22,7 +22,7 @@
   
   ### Dia 3
   
-  <p>Hoy he empezado con una nueva serie de datos complejos como lo son los Sets(), los WeakSets(), los Maps() y los WeakMaps(). También vi el dato primitivo Symbol().Los apuntes tomados se pueden ver en un archivo que he creado nuevo dentro de la carpeta "Semana 2" que se llama "nuevos-datos.html" .</p>
+  <p>Hoy he empezado con una nueva serie de datos complejos como lo son los Sets(), los WeakSets(), los Maps() y los WeakMaps(). También vi el dato primitivo Symbol(). Los apuntes tomados se pueden ver en un archivo que he creado nuevo dentro de la carpeta "Semana 2" que se llama "nuevos-datos.html" .</p>
 
   ## Actividad por la tarde
   <p>Me estoy dedicando a hacer ejercicios más complejos que por la mañana. Estoy probando ejercicios con clases, métodos estáticos...</p>
