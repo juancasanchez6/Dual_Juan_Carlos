@@ -9,6 +9,7 @@
   <li>Símbolos: Symbol()</li>
   <li>Set()</li>
   <li>Map()</li>
+  <li>WeakSet() & weakMap()</li>
 </ul>
 
 ## Actividad por la mañana
