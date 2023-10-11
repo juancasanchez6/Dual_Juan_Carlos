@@ -156,6 +156,16 @@
         */
 
       const arrayCuadrado = (array) => {
+          if (array === undefined)return console.warn("No ingresaste ningún array");
+
+        if (!(array instanceof Array))return console.error("El dato introducido no es un array");
+        
+        if (array.length === 0) return console.error("El array está vacío");
+        
+        for (let i of array) {
+          if (typeof i !== "number")
+            return console.error(`El valor "${i}" NO es un número`);
+        }
         arrayCuad = [];
         for (let i = 0; i < array.length; i++) {
           arrayCuad[i] = array[i] * array[i];
@@ -171,6 +181,16 @@
         */
 
       const arrayMaxMin = (array) => {
+          if (array === undefined)return console.warn("No ingresaste ningún array");
+
+        if (!(array instanceof Array))return console.error("El dato introducido no es un array");
+        
+        if (array.length === 0) return console.error("El array está vacío");
+        
+        for (let i of array) {
+          if (typeof i !== "number")
+            return console.error(`El valor "${i}" NO es un número`);
+        }
         let max = 0,
           min = 0;
         for (let i = 0; i < array.length; i++) {
@@ -192,6 +212,16 @@
         */
 
       const arrayParesImpares = (array) => {
+          if (array === undefined)return console.warn("No ingresaste ningún array");
+
+        if (!(array instanceof Array))return console.error("El dato introducido no es un array");
+        
+        if (array.length === 0) return console.error("El array está vacío");
+        
+        for (let i of array) {
+          if (typeof i !== "number")
+            return console.error(`El valor "${i}" NO es un número`);
+        }
         arrayPares = [];
         arrayImpares = [];
         for (let i = 0; i < array.length; i++) {
