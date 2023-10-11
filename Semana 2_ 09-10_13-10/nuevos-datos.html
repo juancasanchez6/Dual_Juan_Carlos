@@ -106,8 +106,9 @@
       set2.clear();
       console.log(set2);
       */
+
       //******* MAP *******
-        /*
+      /*
       const mapa = new Map();
       mapa.set("nombre", "Juan Carlos");
       mapa.set("apellido", "Sanchez");
@@ -146,6 +147,72 @@
       console.log(
         `Las claves del mapa son: [${clavesMapa2}]\nLos valores del mapa son: [${valoresMapa2}]`
       );
+      */
+
+      //******* WeakSets(Conjuntos debiles) & WeakMaps(Mapas debiles) *******
+      /*
+      const ws = new WeakSet();
+
+      let valor1 = { valor1: 1 };
+      let valor2 = { valor2: 2 };
+      let valor3 = { valor3: 3 };
+
+      ws.add(valor1);
+      ws.add(valor2);
+
+      console.log(ws);
+
+      console.log(ws.has(valor1));
+      console.log(ws.has(valor2));
+      console.log(ws.has(valor3));
+
+      ws.delete(valor2);
+      console.log(ws);
+
+      ws.add(valor2);
+      ws.add(valor3);
+      console.log(ws);
+
+      setInterval(() => console.log(ws), 1000);
+
+      setTimeout(() => {
+        valor1 = null;
+        valor2 = null;
+        valor3 = null;
+      }, 5000);
+      */
+      /*
+      const wm = new WeakMap();
+      let clave1 = {};
+      let clave2 = {};
+      let clave3 = {};
+
+      wm.set(clave1, 1);
+      wm.set(clave2, 2);
+
+      console.log(wm);
+
+      console.log(wm.has(clave1));
+      console.log(wm.has(clave3));
+
+      console.log(wm.get(clave1));
+      console.log(wm.get(clave2));
+      console.log(wm.get(clave3));
+
+      wm.delete(clave2);
+      console.log(wm);
+
+      wm.set(clave2, 2);
+      wm.set(clave3, 3);
+      console.log(wm);
+
+      setInterval(() => console.log(wm), 1000);
+
+      setTimeout(() => {
+        clave1 = null;
+        clave2 = null;
+        clave3 = null;
+      }, 1000);
       */
     </script>
   </body>
