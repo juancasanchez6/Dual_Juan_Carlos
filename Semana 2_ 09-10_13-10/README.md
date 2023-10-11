@@ -19,3 +19,4 @@
 
   ## Actividad por la tarde
   <p>Me estoy dedicando a hacer ejercicios más complejos que por la mañana. Estoy probando ejercicios con clases, métodos estáticos...</p>
+  <p>Sigo haciendo ejercicios orientados a los conceptos que aprendo por las mañanas, bien sean del curso o bien me los busco yo por cuenta propia</p>
