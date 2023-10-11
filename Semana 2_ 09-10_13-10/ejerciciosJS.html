@@ -289,6 +289,58 @@
         });
       };
       arrayOrdenado([7, 5, 7, 8, 6]);
+
+        /******** EJERCICIO 25 ********
+        /*
+         25) Programa una función que dado un arreglo de elementos, elimine los duplicados,
+         pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true])
+         devolverá ["x", 10, 2, "10", true].
+        */
+
+      const eliminarDuplicados = (array) => {
+        if (array === undefined)
+          return console.warn("No ingresaste ningún array");
+
+        if (!(array instanceof Array))
+          return console.error("El dato introducido no es un array");
+
+        if (array.length === 0) return console.error("El array está vacío");
+
+        
+
+        return console.info({
+          sinDuplicar: [...new Set(array)],
+        });
+      };
+      eliminarDuplicados(["x", 10, "x", 2, "10", 10, true, true]);
+
+        /******** EJERCICIO 26 ********
+        /*
+         26) Programa una función que dado un arreglo de números obtenga el promedio,
+         pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5.
+        */
+
+      const promedio = (array) => {
+        if (array === undefined)
+          return console.warn("No ingresaste ningún array");
+
+        if (!(array instanceof Array))
+          return console.error("El dato introducido no es un array");
+
+        if (array.length === 0) return console.error("El array está vacío");
+
+        for (let i of array) {
+          if (typeof i !== "number")
+            return console.error(`El valor "${i}" NO es un número`);
+        }
+
+        let sum = array.reduce((num, current) => (current += num));
+        return console.info("Media: ",
+          media= sum / array.length,
+        );
+      };
+
+      promedio([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
     </script>
 </body>
 </html>
