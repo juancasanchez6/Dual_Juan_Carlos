@@ -231,8 +231,12 @@
           calificacion: 9.3,
         },
       ];
-
+        //Primera forma de mostrar los datos. Con un FOR EACH
       misPelis.forEach((elem) => new Pelicula(elem).fichaTecnica());
+
+      //Segunda forma de mostrar los datos. Co un MAP()
+      misPelis.map((el) => console.info(el));
+
       //peli.fichaTecnica();
       //console.log(peli);
     </script>
