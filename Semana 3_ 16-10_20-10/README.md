@@ -15,7 +15,7 @@
 <p>Los apuntes nuevos estan en el archivo que se llama "nuevos-datos.html"</p>
 ## Actividad por la mañana
   ### Dia 1
-  <p>Continuo con el curso de JavaScript</p>
+  <p>Continuo con el curso de JavaScript. Hoy he empezado a ver el JSON y el DOM, para ya meterme más a dentro e intercambiar datos e información con archivos de diferentes lenguajes.</p>
   
   ### Dia 2
   
