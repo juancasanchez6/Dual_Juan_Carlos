@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevos Tipo de Datos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Nuevos Tipo de Datos de JavaScript</h1>
+    <script>
+      //******* SIMBOLOS *******
+      /*Los simbolos son como propiedads privadas, no se ven en consola y se pueden
+      declarar propiedades públicas con el mismo nombre que no van a causar ningún problema
+      */
+
+      /*
+      let id = Symbol();
+      let id2 = Symbol();
+
+      console.log(id === id2);
+      console.log(id, id2);
+      console.log(typeof id, typeof id2);
+
+      const NOMBRE = Symbol("nombre");
+      const SALUDAR = Symbol("saludar");
+
+      const persona = {
+        [NOMBRE]: "Juan Carlos",
+        edad: 35,
+      };
+
+      console.log(persona);
+
+      persona.NOMBRE = "Juanca";
+      console.log(persona);
+      console.log(persona.NOMBRE);
+      console.log(persona[NOMBRE]);
+
+      persona[SALUDAR] = function () {
+        console.log("Hola");
+      };
+      console.log(persona);
+      persona[SALUDAR]();
+
+      for (const propiedad in persona) {
+        console.log(propiedad);
+        console.log(persona[propiedad]);
+      }
+
+      console.log(Object.getOwnPropertySymbols(persona));
+      */
+
+      //******* SET *******
+      /*El tipo SET tiene la misma funcion que un Array con la única diferencia 
+      de que no permite duplicados en sus datos, es decir, solo acepta valores únicos
+      */
+      /*
+      const set = new Set([
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        true,
+        false,
+        false,
+        {},
+        {},
+        "hola",
+        "HOLA",
+      ]);
+      console.log(set);
+      console.log(set.size);
+
+      const set2 = new Set();
+      set2.add(1);
+      set2.add(2);
+      set2.add(2);
+      set2.add(3);
+      set2.add(true);
+      set2.add(false);
+      set2.add(true);
+      set2.add({});
+      console.log(set2);
+
+      //console.log("Recorriendo Set");
+
+      //   for (it of set) {
+      //     console.log(it);
+      //   }
+
+      //console.log("\nRecorriendo Set2");
+      // set2.forEach((it) => console.log(it));
+
+      let array = Array.from(set);
+
+      console.log(array[3]);
+
+      set.delete("HOLA");
+      console.log(set);
+
+      console.log(set.has("hola"));
+      console.log(set.has(20));
+
+      set2.clear();
+      console.log(set2);
+      */
+
+      //******* MAP *******
+      /*
+      const mapa = new Map();
+      mapa.set("nombre", "Juan Carlos");
+      mapa.set("apellido", "Sanchez");
+      mapa.set("edad", "24");
+
+      console.log(mapa);
+      console.log(mapa.size);
+      console.log(mapa.has("correo"));
+      console.log(mapa.has("nombre"));
+      console.log(mapa.get("nombre"));
+      console.log(mapa.get("edad"));
+
+      mapa.set("nombre", "Juanca Sanchez");
+      console.log(mapa.get("nombre"));
+
+      mapa.delete("apellido");
+
+      console.log(mapa);
+
+      for (let [key, value] of mapa) {
+        console.log(`Clave: ${key}\nValor: ${value}`);
+      }
+
+      const mapa2 = new Map([
+        ["nombre", "Juanca"],
+        ["edad", "24"],
+        ["estado", "soltero"],
+        [null, "nulo"],
+      ]);
+
+      console.log(mapa2);
+
+      const clavesMapa2 = [...mapa2.keys()];
+      const valoresMapa2 = [...mapa2.values()];
+
+      console.log(
+        `Las claves del mapa son: [${clavesMapa2}]\nLos valores del mapa son: [${valoresMapa2}]`
+      );
+      */
+
+      //******* WeakSets(Conjuntos debiles) & WeakMaps(Mapas debiles) *******
+      /*
+      const ws = new WeakSet();
+
+      let valor1 = { valor1: 1 };
+      let valor2 = { valor2: 2 };
+      let valor3 = { valor3: 3 };
+
+      ws.add(valor1);
+      ws.add(valor2);
+
+      console.log(ws);
+
+      console.log(ws.has(valor1));
+      console.log(ws.has(valor2));
+      console.log(ws.has(valor3));
+
+      ws.delete(valor2);
+      console.log(ws);
+
+      ws.add(valor2);
+      ws.add(valor3);
+      console.log(ws);
+
+      setInterval(() => console.log(ws), 1000);
+
+      setTimeout(() => {
+        valor1 = null;
+        valor2 = null;
+        valor3 = null;
+      }, 5000);
+      */
+      /*
+      const wm = new WeakMap();
+      let clave1 = {};
+      let clave2 = {};
+      let clave3 = {};
+
+      wm.set(clave1, 1);
+      wm.set(clave2, 2);
+
+      console.log(wm);
+
+      console.log(wm.has(clave1));
+      console.log(wm.has(clave3));
+
+      console.log(wm.get(clave1));
+      console.log(wm.get(clave2));
+      console.log(wm.get(clave3));
+
+      wm.delete(clave2);
+      console.log(wm);
+
+      wm.set(clave2, 2);
+      wm.set(clave3, 3);
+      console.log(wm);
+
+      setInterval(() => console.log(wm), 1000);
+
+      setTimeout(() => {
+        clave1 = null;
+        clave2 = null;
+        clave3 = null;
+      }, 1000);
+      */
+
+      // ******* Iterables & Iterators *******
+      /*
+      const iterable = [1,2,3,4,5];
+      // const iterable = "Hola Mundo";
+      // const iterable = new Set([1,2,2,3,3,4,4,5,5,,3]);
+      // const iterable = new Map([["nombre", "Juan Carlos"], ["edad", 24]]);
+
+      //Accedemos aliterador del irterable
+      const iterador = iterable[Symbol.iterator]();
+
+      console.log(iterable);
+      console.log(iterador);
+      // console.log(iterador.next());
+      // console.log(iterador.next());
+      // console.log(iterador.next());
+      // console.log(iterador.next());
+      // console.log(iterador.next());
+      // console.log(iterador.next());
+
+      let next = iterador.next();
+
+      while (!next.done) {
+        console.log(next.value);
+        next = iterador.next();
+      }
+      */
+
+
+
+    </script>
+  </body>
+</html>
