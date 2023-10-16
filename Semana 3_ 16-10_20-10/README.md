@@ -3,6 +3,8 @@
 <ul>
   <li>Iteradores & Iterators</li>
   <li>Generators</li>
+  <li>Proxies</li>
+  <li>Propiedades Dinámicas</li>
  
 </ul>
 
