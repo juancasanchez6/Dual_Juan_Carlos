@@ -7,6 +7,8 @@
   <li>Propiedades Dinámicas</li>
   <li>This</li>
   <li>Call, Apply & Bind</li>
+  <li>JSON</li>
+  <li>WEB APIs</li>
  
 </ul>
 
