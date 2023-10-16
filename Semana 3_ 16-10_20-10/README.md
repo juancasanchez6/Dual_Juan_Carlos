@@ -2,6 +2,7 @@
 ## Cosas vistas
 <ul>
   <li>Iteradores & Iterators</li>
+  <li>Generators</li>
  
 </ul>
 
