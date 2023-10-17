@@ -17,9 +17,6 @@
         <li>texto y HTML</li>
     </ul>
   </li>
-  <li>WEB APIs</li>
-  <li>WEB APIs</li>
- 
 </ul>
 
 <p>Los apuntes nuevos estan en el archivo que se llama "nuevos-datos.html"</p>
@@ -32,7 +29,7 @@
   
   ### Dia 2
   
-  <p></p>
+  <p>Continuo con los manejos del DOM, aprendiendo a cambiar y asignar valores de CSS y HTML dinámicamente desde JavaScript</p>
   
   ### Dia 3
   
