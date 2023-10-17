@@ -15,6 +15,8 @@
         <li>estilos y variables CSS</li>
         <li>clases CSS</li>
         <li>texto y HTML</li>
+        <li>Traversing: Recorriendo el DOM</li>
+        <li>creando elemtos y fragmentos</li>
     </ul>
   </li>
 </ul>
