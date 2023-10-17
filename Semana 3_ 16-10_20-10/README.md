@@ -8,6 +8,16 @@
   <li>This</li>
   <li>Call, Apply & Bind</li>
   <li>JSON</li>
+  <li>DOM
+    <ul>
+        <li>nodos, elemtos y selectores</li>
+        <li>atributos y data-atributos</li>
+        <li>estilos y variables CSS</li>
+        <li>clases CSS</li>
+        <li>texto y HTML</li>
+    </ul>
+  </li>
+  <li>WEB APIs</li>
   <li>WEB APIs</li>
  
 </ul>
