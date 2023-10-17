@@ -193,4 +193,43 @@ setTimeout(() => {
   console.log($cards.children[3].closest("section"))
 
 },1000)
+
+
+//CREANDO ELEMNTOS Y FRAGMENTOS DINÁMICAMENTE
+
+const $figure = document.createElement("figure"),
+  $img = document.createElement("img"),
+  $figcaption = document.createElement("figcaption"),
+  $figcaptionText = document.createTextNode("Animals"),
+  $cards = document.querySelector(".cards");
+
+$img.setAttribute("src", "https://source.unsplash.com/random/200x200/?animals");
+$img.setAttribute("alt", "Animals");
+$figcaption.appendChild($figcaptionText);
+$figure.appendChild($img);
+$figure.appendChild($figcaption);
+$figure.classList.add("card");
+
+$cards.appendChild($figure);
+
+const estaciones = ["Prmavera", "Verano", "Otoño", "Invierno"],
+  $ul = document.createElement("ul");
+
+document.write("<h3>Estaciones del año</h3>");
+document.body.appendChild($ul);
+
+estaciones.forEach((el) => {
+  const $li = document.createElement("li");
+  $li.textContent = el;
+  $ul.appendChild($li);
+});
+
+const continentes = ["África", "América", "Asia", "Europa", "Oceanía"],
+  $ul2 = document.createElement("ul");
+
+document.write("<h3>Continentes del mundo</h3>");
+document.body.appendChild($ul2);
+
+$ul2.innerHTML = "";
+continentes.forEach((el) => ($ul2.innerHTML += `<li>${el}</li>`));
 */
