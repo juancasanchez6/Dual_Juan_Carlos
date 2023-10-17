@@ -173,4 +173,24 @@ let text = `
 $whatISDOM.textContent = text;
 $whatISDOM.innerHTML = text;
 $whatISDOM.outerHTML = text;
+
+
+const $cards = document.querySelector(".cards");
+
+//las sentencias las meto dentro de un SetTimeOut para que de tiempo a cargar las imágenes
+//aleatorias y asi funcione a consola corrctamente
+setTimeout(() => {
+  
+  console.log($cards);
+  console.log($cards.children);
+  console.log($cards.children[2]);
+  console.log($cards.parentElement); 
+  console.log($cards.firstElementChild); 
+  console.log($cards.lastElementChild); 
+  console.log($cards.previousElementSibling); 
+  console.log($cards.nextElementSibling); 
+  console.log($cards.closest("div"))
+  console.log($cards.children[3].closest("section"))
+
+},1000)
 */
