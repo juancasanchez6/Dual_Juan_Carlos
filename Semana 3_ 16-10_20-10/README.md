@@ -23,6 +23,8 @@
         <li>Manejadores de Eventos: semánticos y múltiples</li>
         <li>Eventos con parámetros</li>
         <li>Borrar eventos</li>
+        <li>Flujo de eventos (burbuja y captura)</li>
+        <li>stopPropagation() & preventDefault()</li>
     </ul>
   </li>
 </ul>
@@ -43,7 +45,7 @@
   
   ### Dia 3
   
-  <p>Hoy he empezado con los eventos, a manejarlos de diferentes formas y de diferentes tipos. También he aprendido a borrarlos y ejecutarlos más de una vez dinámicamente.</p>
+  <p>Hoy he empezado con los eventos, a manejarlos de diferentes formas y de diferentes tipos. También he aprendido a borrarlos y ejecutarlos más de una vez dinámicamente. He terminado los eventos, tanto el manejo de flujos como el parar la propagación para que solamente se ejecute las veces que tu quieras.</p>
 
   ## Actividad por la tarde
   <p></p>
