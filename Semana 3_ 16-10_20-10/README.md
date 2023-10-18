@@ -18,6 +18,8 @@
         <li>Traversing: Recorriendo el DOM</li>
         <li>creando elemtos y fragmentos</li>
         <li>templates HTML</li>
+        <li>modificando elementos: Old Style</li>
+        <li>modificando elementos: Cool Style</li>
     </ul>
   </li>
 </ul>
