@@ -17,6 +17,7 @@
         <li>texto y HTML</li>
         <li>Traversing: Recorriendo el DOM</li>
         <li>creando elemtos y fragmentos</li>
+        <li>templates HTML</li>
     </ul>
   </li>
 </ul>
