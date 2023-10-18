@@ -212,6 +212,7 @@ $figure.classList.add("card");
 
 $cards.appendChild($figure);
 
+//NO SE USA
 const estaciones = ["Prmavera", "Verano", "Otoño", "Invierno"],
   $ul = document.createElement("ul");
 
@@ -224,6 +225,7 @@ estaciones.forEach((el) => {
   $ul.appendChild($li);
 });
 
+//NO SE USA
 const continentes = ["África", "América", "Asia", "Europa", "Oceanía"],
   $ul2 = document.createElement("ul");
 
@@ -232,4 +234,102 @@ document.body.appendChild($ul2);
 
 $ul2.innerHTML = "";
 continentes.forEach((el) => ($ul2.innerHTML += `<li>${el}</li>`));
+
+//ES EL MÁS USADO Y MÁS EFICAZ (FRAGMENTOS) MEJORA EL RENDIMIENTO
+const meses = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+],
+  $ul3 = document.createElement("ul");
+  $fragment = document.createDocumentFragment();
+
+meses.forEach(el => {
+  const $li = document.createElement("li")
+  $li.textContent = el
+  $fragment.appendChild($li)
+})
+
+document.write("<h3> Meses del año </h3>")
+$ul3.appendChild($fragment)
+document.body.appendChild($ul3)
+
+
+const $cards = document.querySelector(".cards"),
+  $template = document.getElementById("template-card").content,
+  $fragment = document.createDocumentFragment(),
+  cardContent = [
+    {
+      title: "Animales",
+      img: "https://source.unsplash.com/random/200x200/?animals",
+    },
+    {
+      title: "Película",
+      img: "https://source.unsplash.com/random/200x200/?film",
+    },
+    {
+      title: "Deportes",
+      img: "https://source.unsplash.com/random/200x200/?sports",
+    },
+    {
+      title: "Arquitectura",
+      img: "https://source.unsplash.com/random/200x200/?architecture-interior",
+    },
+    {
+      title: "Naturaleza",
+      img: "https://source.unsplash.com/random/200x200/?nature",
+    },
+  ];
+
+cardContent.forEach((el) => {
+  $template.querySelector("img").setAttribute("src", el.img);
+  $template.querySelector("img").setAttribute("alt", el.title);
+  $template.querySelector("figcaption").textContent = el.title;
+
+  let $clone = document.importNode($template, true);
+  $fragment.appendChild($clone);
+});
+
+$cards.appendChild($fragment);
+
+
+const $cards = document.querySelector(".cards"),
+  $newCard = document.createElement("figure"),
+  $colneCards = $cards.cloneNode(true);
+
+$newCard.innerHTML = `
+<img src="https://source.unsplash.com/random/200x200/?any" alt="Any"/>
+<figcaption>Any</figcaption>
+`;
+
+$newCard.classList.add("card");
+
+/*Para reemplazar por cualquier otro nodo
+
+  $cards.replaceChild($newCard, $cards.children[2])
+
+
+ 
+
+/*Para insertar uhn nodo nuevo justo antes del primero ya existente
+
+    $cards.insertBefore($newCard, $cards.firstElementChild)
+
+
+/*Para elimar un elemnto concreto, en este caso es el último
+
+    $cards.removeChild($cards.lastElementChild)
+
+
+document.body.appendChild($colneCards)
+
 */
