@@ -361,4 +361,51 @@ $newCard.classList.add("card");
 $newCard.insertAdjacentHTML("beforeend", $contentCard)
 $newCard.querySelector("figcaption").insertAdjacentText("beforeend", "Any")
 $cards.insertAdjacentElement("afterbegin", $newCard)
+
+
+function holaMundo() {
+  alert("Hola Mundo");
+  console.log(event);
+}
+
+function saludar(nombre = "Desconocid@") {
+  alert(`Hola ${nombre}`);
+  console.log(event);
+}
+
+const $eventoSemantico = document.getElementById("evento-s"),
+  $eventoMultiple = document.getElementById("evento-multiple"),
+  $eventoRemover = document.getElementById("evento-remover");
+
+$eventoSemantico.onclick = holaMundo;
+
+$eventoSemantico.onclick = function (e) {
+  alert("Hola Mundo Manejador de eventos semanticos");
+  console.log(e);
+  console.log(event);
+};
+/*
+$eventoMultiple.addEventListener("click", holaMundo);
+
+$eventoMultiple.addEventListener("click", (e) => {
+  alert("Manejador de eventos multiples");
+  console.log(e);
+  console.log(e.type);
+  console.log(e.target);
+  console.log(event);
+});
+
+$eventoMultiple.addEventListener("click", () => {
+  saludar();
+  saludar("Juanca");
+});
+
+const removerDobleClick = (e) => {
+  alert(`Borrando el evento tipo ${e.type}`);
+  console.log(e);
+  $eventoRemover.removeEventListener("dblclick", removerDobleClick);
+  $eventoRemover.disabled = true; 
+};
+
+$eventoRemover.addEventListener("dblclick", removerDobleClick);
 */
