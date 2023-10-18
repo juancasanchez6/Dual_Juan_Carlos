@@ -20,6 +20,7 @@
         <li>templates HTML</li>
         <li>modificando elementos: Old Style</li>
         <li>modificando elementos: Cool Style</li>
+        <li>Manejadores de Eventos: semánticos y múltiples</li>
     </ul>
   </li>
 </ul>
