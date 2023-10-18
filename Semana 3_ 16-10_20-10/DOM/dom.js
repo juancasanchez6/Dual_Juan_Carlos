@@ -318,8 +318,6 @@ $newCard.classList.add("card");
   $cards.replaceChild($newCard, $cards.children[2])
 
 
- 
-
 /*Para insertar uhn nodo nuevo justo antes del primero ya existente
 
     $cards.insertBefore($newCard, $cards.firstElementChild)
@@ -332,4 +330,35 @@ $newCard.classList.add("card");
 
 document.body.appendChild($colneCards)
 
+*/
+
+/*
+.insertAdjacent…
+  .insertAdjacentElement(position, el)---> Agrega un elemento
+  .insertAdjacentHTML(position, html)---> Agrega un contenido html
+  .insertAdjacentText(position, text)---> Agrega un texto
+
+
+Posiciones:
+  beforebegin---> hermano anterior
+  afterbegin---> primer hijo
+  beforeend---> ultimo hijo
+  afterend---> hermano siguiente
+*/
+
+/*
+const $cards = document.querySelector(".cards"),
+  $newCard = document.createElement("figure"),
+  $colneCards = $cards.cloneNode(true);
+
+let $contentCard = `
+<img src="https://source.unsplash.com/random/200x200/?any" alt="Any"/>
+<figcaption></figcaption>
+`;
+
+$newCard.classList.add("card"); 
+
+$newCard.insertAdjacentHTML("beforeend", $contentCard)
+$newCard.querySelector("figcaption").insertAdjacentText("beforeend", "Any")
+$cards.insertAdjacentElement("afterbegin", $newCard)
 */
