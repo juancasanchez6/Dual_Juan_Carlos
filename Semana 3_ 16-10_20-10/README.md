@@ -30,7 +30,7 @@
   
   <p>Continuo con el curso de JavaScript. Hoy he empezado a ver el JSON y el DOM, para ya meterme más a dentro e intercambiar datos e información con archivos de diferentes lenguajes.</p>
 
-  <p>A partir de aqui ya manejamos archivos ".js". Todo lo que trabajo con el DOM está metido en la carpeta que se llama "DOM" dentro de la Semana_3, en donde se encuentran tanto el ".html" y el ".js"</p>
+  <p>A partir de aqui ya manejamos archivos ".js". Todo lo que trabajo con el DOM está metido en la carpeta que se llama "DOM" dentro de la Semana_3, en donde se encuentran tanto el ".html" como el ".js"</p>
   
   ### Dia 2
   
