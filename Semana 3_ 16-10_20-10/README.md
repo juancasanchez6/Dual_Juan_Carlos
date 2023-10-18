@@ -43,7 +43,7 @@
   
   ### Dia 3
   
-  <p></p>
+  <p>Hoy he empezado con los eventos, a manejarlos de diferentes formas y de diferentes tipos. También he aprendido a borrarlos y ejecutarlos más de una vez dinámicamente.</p>
 
   ## Actividad por la tarde
   <p></p>
