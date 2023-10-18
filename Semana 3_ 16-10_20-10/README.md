@@ -21,6 +21,8 @@
         <li>modificando elementos: Old Style</li>
         <li>modificando elementos: Cool Style</li>
         <li>Manejadores de Eventos: semánticos y múltiples</li>
+        <li>Eventos con parámetros</li>
+        <li>Borrar eventos</li>
     </ul>
   </li>
 </ul>
