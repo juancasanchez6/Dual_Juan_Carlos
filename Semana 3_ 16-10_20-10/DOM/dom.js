@@ -479,4 +479,26 @@ document.addEventListener("DOMContentLoaded", (e) => {
   console.log(e);
   //e.stopPropagation();
 });
- */
+ 
+
+const $botonAbrir = document.getElementById("abrir-ventana"),
+  $botonCerrar = document.getElementById("cerrar-ventana"),
+  $botonImprimir = document.getElementById("imprimir-ventana");
+
+let ventana;
+
+$botonAbrir.addEventListener("click", (e) => {
+  ventana = window.open(
+    "https://github.com/juancasanchez6/Dual_Juan_Carlos/blob/main/Semana%203_%2016-10_20-10/README.md"
+  );
+});
+
+$botonCerrar.addEventListener("click", (e) => {
+  //window.close();
+  ventana.close();
+});
+
+$botonImprimir.addEventListener("click", (e) => {
+  window.print();
+});
+*/
