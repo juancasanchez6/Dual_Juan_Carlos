@@ -56,6 +56,4 @@
   <p>He hempezado con los ejercicios orientados al DOM. He hecho un menú con animaciones, botones, enlaces, etc.</p>
   <p>Los ejercicios orientados al DOm se pueden encontrar en la página principal en la carpeta "ejercicios_DOM" dentro de ella se pueden ver los archivos ".html", y las carpetas "css" (donde se encuentran los archivos ".css") y "js" (donde se encuentran los archivos ".js")</p>
 
-  ## Actividad por la tarde
-  <p></p>
-  <p></p>
+
