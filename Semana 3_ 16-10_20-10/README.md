@@ -26,7 +26,7 @@
         <li>Flujo de eventos (burbuja y captura)</li>
         <li>stopPropagation() & preventDefault()</li>
         <li>Delegación de Eventos</li>
-        <li>BOM: Propiedades y Eventos</li>
+        <li>BOM(Browser Object Model): Propiedades y Eventos</li>
         <li>BOM: Métodos</li>
         <li>BOM: Objetos -> URL, Historial y Navegador</li>
     </ul>
