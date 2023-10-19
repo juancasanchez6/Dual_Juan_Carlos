@@ -50,6 +50,11 @@
   ### Dia 3
   
   <p>Hoy he empezado con los eventos, a manejarlos de diferentes formas y de diferentes tipos. También he aprendido a borrarlos y ejecutarlos más de una vez dinámicamente. He terminado los eventos, tanto el manejo de flujos como el parar la propagación para que solamente se ejecute las veces que tu quieras.</p>
+  
+  ### Dia 4
+  
+  <p>He hempezado con los ejercicios orientados al DOM. He hecho un menú con animaciones, botones, enlaces, etc.</p>
+  <p>Los ejercicios orientados al DOm se pueden encontrar en la página principal en la carpeta "ejercicios_DOM" dentro de ella se pueden ver los archivos ".html", y las carpetas "css" (donde se encuentran los archivos ".css") y "js" (donde se encuentran los archivos ".js")</p>
 
   ## Actividad por la tarde
   <p></p>
