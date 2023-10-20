@@ -56,4 +56,8 @@
   <p>He hempezado con los ejercicios orientados al DOM. He hecho un menú con animaciones, botones, enlaces, etc.</p>
   <p>Los ejercicios orientados al DOm se pueden encontrar en la página principal en la carpeta "ejercicios_DOM" dentro de ella se pueden ver los archivos ".html", y las carpetas "css" (donde se encuentran los archivos ".css") y "js" (donde se encuentran los archivos ".js")</p>
 
+  ### Dia 5
+  
+  <p>He usado la web creada para el menu de hamburguesas para crear un reloj digital con interacción del usuario que puede iniuciarlo, pararlo, también puede activar una alarma, que he creado en una etiqueta "audio" dinámicamente desde JavaScript y también la opción de detenerla. Todas estas interacciones con el usuario es a traves de botones.</p>
+  
 
