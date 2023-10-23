@@ -11,7 +11,7 @@ export function darkTheme(btn, classDark) {
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(btn)) {
-      console.log($themeBtn.textContent);
+      //console.log($themeBtn.textContent);
       if ($themeBtn.textContent === moon) {
         $selectors.forEach((el) => el.classList.add(classDark));
         $themeBtn.textContent = sun;
