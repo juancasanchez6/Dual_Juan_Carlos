@@ -1,7 +1,7 @@
-import hamburgerMenu from "./dom/menu_hamburguesa.js";
-import { digitalReloj, alarmaSonora } from "./dom/reloj_digital.js";
-import { moveBall, shortCuts } from "./dom/teclado.js";
-import countDown from "./dom/cuenta_regresiva.js";
+import hamburgerMenu from "./menu_hamburguesa.js";
+import { digitalReloj, alarmaSonora } from "./reloj_digital.js";
+import { moveBall, shortCuts } from "./teclado.js";
+import countDown from "./cuenta_regresiva.js";
 
 const d = document;
 
@@ -9,7 +9,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
   digitalReloj("#reloj", "#activar-reloj", "#desactivar-reloj");
   alarmaSonora(
-    "../../assets/soundAlarma.mp3",
     "#activar-alarma",
     "#desactivar-alarma"
   );

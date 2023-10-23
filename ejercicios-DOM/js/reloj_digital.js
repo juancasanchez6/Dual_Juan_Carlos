@@ -21,10 +21,10 @@ export function digitalReloj(reloj, btnIniciar, btnParar) {
   });
 }
 
-export function alarmaSonora(sound, alarmaSi, alarmaNo) {
+export function alarmaSonora( alarmaSi, alarmaNo) {
   let alarmaTempo;
   const $alarma = d.createElement("audio");
-  $alarma.src = sound;
+  //$alarma.src = sound;
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(alarmaSi)) {
