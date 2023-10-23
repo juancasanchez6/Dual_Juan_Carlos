@@ -3,19 +3,22 @@ import { digitalReloj, alarmaSonora } from "./reloj_digital.js";
 import { moveBall, shortCuts } from "./teclado.js";
 import countDown from "./cuenta_regresiva.js";
 import scrollTopBtn from "./boton_scroll.js";
+import {darkTheme} from "./tema_oscuro.js";
 
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
   digitalReloj("#reloj", "#activar-reloj", "#desactivar-reloj");
-  alarmaSonora(
-    "#activar-alarma",
-    "#desactivar-alarma"
+  alarmaSonora("#activar-alarma", "#desactivar-alarma");
+  countDown(
+    "countDown",
+    "Oct 23, 2023 11:03:20",
+    "Ejercicio hecho correctamente"
   );
-  countDown("countDown", "Oct 23, 2023 11:03:20", "Ejercicio hecho correctamente");
 
-  scrollTopBtn(".scroll-top-btn")
+  scrollTopBtn(".scroll-top-btn");
+  darkTheme(".dark-theme-btn", "dark-mode");
 });
 
 d.addEventListener("keydown", (e) => {
