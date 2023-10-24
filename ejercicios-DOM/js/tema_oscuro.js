@@ -18,7 +18,7 @@ export function darkTheme(btn, classDark) {
   
   const darkMode = () => {
     $selectors.forEach((el) => el.classList.add(classDark));
-    $themeBtn.textContent = sun;
+    $themeBtn.textContent = sun; 
     ls.setItem("theme", "dark")
   };
 
