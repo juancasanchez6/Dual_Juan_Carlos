@@ -68,11 +68,11 @@ section {
   width: 100%;
   background-color: var(--second-modal-color);
   transition: transform.3s ease;
-  /* Que el panel salga de arriba */
-  transform: translate(0, -100%);
-  /*Que el panel salga de abajo
+   /* Que el panel salga de arriba 
+  transform: translate(0, -100%); */
+  /*Que el panel salga de abajo*/
   transform: translate(0, 100%);
-   Que el panel salga de izq 
+   /*Que el panel salga de izq 
   transform: translate(-100%, 0);
    Que el panel salga de derecha 
   transform: translate(100%, 0); */

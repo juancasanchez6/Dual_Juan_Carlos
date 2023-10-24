@@ -11,8 +11,8 @@ export function moveBall(e, ball, stage) {
   Math.round(limitsBall);
   Math.round(limitsStage);
 
-  console.log(e.keyCode);
-  console.log(limitsBall, limitsStage);
+  // console.log(e.keyCode);
+  // console.log(limitsBall, limitsStage);
 
   //const move = (direction) => {};
 

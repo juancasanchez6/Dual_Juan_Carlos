@@ -5,6 +5,7 @@ import countDown from "./cuenta_regresiva.js";
 import scrollTopBtn from "./boton_scroll.js";
 import { darkTheme } from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
+import responsiveTester from "./prueba_responsive.js";
 
 const d = document;
 
@@ -20,7 +21,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   scrollTopBtn(".scroll-top-btn");
   responsiveMedia(
-    "yotube",
+    "youtube",
     "(min-width: 1024px)",
     `<a href= "https://www.youtube.com/watch?v=fBJbQbuICrY&ab_channel=MemoriasdelF%C3%BAtbol"
     target = "_blank" rel = "noopener"> Ver vídeo </a>`,
@@ -39,6 +40,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>`
   );
+
+  responsiveTester("responsive-tester")
 });
 
 d.addEventListener("keydown", (e) => {
