@@ -36,6 +36,7 @@ img {
 
 header {
   position: sticky;
+  z-index: 997;
   top: 0;
   padding: 1rem;
   background-color: var(--main-color);
@@ -283,3 +284,34 @@ section {
   opacity: 0;
   order: 1;
 }
+
+/* *********** Responsive Slider *********** */
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+} 
+
+.slider-slides {
+  position: relative;
+  height: 400px;
+}
+
+.slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.slider-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
