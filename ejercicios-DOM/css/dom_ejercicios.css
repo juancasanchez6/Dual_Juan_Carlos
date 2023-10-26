@@ -405,4 +405,12 @@ section {
     left: calc(4.25rem + 1vw);
   }
 
+  .section {
+    /* border: thin solid red; */
+    overflow: hidden;
+  }
+}
+
+video {
+  width: inherit;
 }

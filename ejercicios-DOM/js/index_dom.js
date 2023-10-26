@@ -14,13 +14,18 @@ import filtrosBusqueda from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
 import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
+import smartVideo from "./video_inteligente.js";
 
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
   digitalReloj("#reloj", "#activar-reloj", "#desactivar-reloj");
-  alarmaSonora("#activar-alarma", "#desactivar-alarma");
+  alarmaSonora(
+    "./assets/soundAlarma.mp3",
+    "#activar-alarma",
+    "#desactivar-alarma"
+  );
   countDown(
     "countDown",
     "Oct 23, 2024 11:03:20",
@@ -57,6 +62,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   draw("#winner-btn", ".player");
   slider();
   scrollSpy();
+  smartVideo();
 });
 
 d.addEventListener("keydown", (e) => {
