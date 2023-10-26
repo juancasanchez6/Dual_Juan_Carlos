@@ -15,7 +15,7 @@ export default function webCam(id) {
       })
       .catch((err) => {
         $video.insertAdjacentHTML("beforebegin", `<p>¡Sucedió el error!:<mark> ${err}</mark></p>`);
-        console.log(`¡Sucedió el error!: ${err}`);
+        //console.log(`¡Sucedió el error!: ${err}`);
       });
   }
 }
