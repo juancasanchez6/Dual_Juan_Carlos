@@ -2,9 +2,9 @@ const d = document,
   w = window;
 
 export default function speechReader() {
-  const $speechSelect = d.getElementByld("speech-select"),
-    $speechTextarea = d.getElementByld("speech-text"),
-    $speechBtn = d.getElementByld("speech-btn"),
+  const $speechSelect = d.getElementById("speech-select"),
+    $speechTextarea = d.getElementById("speech-text"),
+    $speechBtn = d.getElementById("speech-btn"),
     speechMessage = new SpeechSynthesisUtterance();
 
   //console.log(speechMessage);
@@ -39,7 +39,9 @@ export default function speechReader() {
   });
 
   d.addEventListener("click", (e) => {
-    speechMessage.text = $speechTextarea.value;
-    w.speechSynthesis.speak(speechMessage);
+    if (e.target === $speechBtn) {
+      speechMessage.text = $speechTextarea.value;
+      w.speechSynthesis.speak(speechMessage);
+    }
   });
 }
