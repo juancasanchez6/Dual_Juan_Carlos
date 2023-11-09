@@ -4,4 +4,4 @@
 
   <p>Seguimos usando el repositorio de <a href="https://github.com/juancasanchez6/React.git">React</a> donde vamos actualizando lo que hacemos cada día.</p>
 
-  <p>Hemos creado una nueva App de React donde estamos trabajando con los frameworks desde varias APIs, para ello he creado un nuevo repositorio (<a href="https://github.com/juancasanchez6/React.git">Frameworks con React</a>) donde puedes ver los avances que vamos haciendo</p>
+  <p>Hemos creado una nueva App de React donde estamos trabajando con los frameworks desde varias APIs, para ello he creado un nuevo repositorio (<a href="https://github.com/juancasanchez6/react-framework-css.git">Frameworks CSS con React</a>) donde puedes ver los avances que vamos haciendo</p>
