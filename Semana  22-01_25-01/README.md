@@ -1,31 +1,6 @@
-# Semana 1
-## Cosas vistas
-<ul>
-  <li>Variables, const, Strings, Números, booleanos, null/NaN</li>
-  <li>Funciones</li>
-  <li>Array</li>
-  <li>Objetos</li>
-  <li>Operadores: arítmeticos, racionales...</li>
-  <li>Condicionales. if, if-else</li>
-  <li>Ciclos: while, do-while, for, forof, forin</li>
-  <li>Manejo de errores</li>
-  <li>Break&Continua, Destructuracion</li>
-  <li>Objetos literales</li>
-  <li>Parametros REST y Operador Spread</li>
-  <li>Arrow Functions</li>
-  <li>Prototipos</li>
-  <li>Herencia Prototípica</li>
-  <li>Clases y herencia</li>
-  <li>Métodos estáticos, getters y setters</li>
-  <li>Objetos console, Date, Math</li>
-  <li>Operadores de cortocircuito: OR - AND</li>
-  <li>alert, confirm, prompt</li>
-  <li>Expresiones regulares</li>
-  <li>Expresiones anónimas autoejecutables</li>
-</ul>
+ <p>En el inicio de este año hemos empezado con un curso para trabajar el Backend. Estamos trabajando con Java, más concretamente con "Spring", dentro de Spring estamos aprendiendo a usar "lombok" y "mapstruct". Gracias a esto estamos aprendiendo a mapear los datos de la base de datos a la que llamamos y asi acceder a los datos de una forma más sencilla y con menos líneas de código.</p>
 
-## Resumen de actividades
-  <p>Estamos empezando con entorno cliente, con JavaScript, nos han dado un curso de vídeos con ejemplos y ejercicios de lógica de programación para ir haciendo poco a poco. Por nuestra cuenta Javi y yo hemos hecho un menú iteractivo, cada uno el suyo pero ayudándonos entre los dos, mi menú es el archivo que se llama "compra_venta_articulos.html".</p>
-  <p>Fuera de las carpetas que iré haciendo de cada semana, tengo un archivo que se llama "apuntes.html" que es donde estoy subiendo todos los apuntes y ejemplos que voy tomando de los vídeos del curso.</p>
-  <p>El jueves empecé con los ejercicios de lógica de programación propuestos para el temario que llevo visto, 
-  los puedes encontrar dentro de la carpeta de la semana 1 con el nombre de "ejerciciosJS.html".</p>
+ <p>Estoy guardando lo que vamos haciendo en el curso (una app de prueba) dentro de este repositorio, donde puedes hacer seguimiento de com vamos avanzando: <a href= "https://github.com/juancasanchez6/mapstruct-lombok-demo.git"></a>Mapstruct-lombok-demo</p>
+
+ <p>El curso que estamos siguiendo lo puedes encontrar aqui: <a href= "https://www.udemy.com/course/domina-el-mapeo-de-objetos-mapstruct-lombok-y-spring-boot/"></a>Curso MapStruct</p>
+  
